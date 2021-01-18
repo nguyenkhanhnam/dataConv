@@ -1,0 +1,4124 @@
+{
+  "@uuid" : "6e41491f-c64e-4040-b840-de571e559886",
+  "all-table-columns" : [ {
+    "@uuid" : "c01b85cc-2e0e-437e-b1f9-8917e91ab58a",
+    "name" : "id",
+    "short-name" : "geom.id",
+    "full-name" : "data_type.geom.id",
+    "attributes" : {
+      "BUFFER_LENGTH" : 65535,
+      "CHARACTER_SET_NAME" : null,
+      "CHAR_OCTET_LENGTH" : null,
+      "COLLATION_NAME" : null,
+      "COLUMN_COMMENT" : "",
+      "COLUMN_TYPE" : "int(11)",
+      "GENERATION_EXPRESSION" : "",
+      "IS_NULLABLE" : "NO",
+      "NUM_PREC_RADIX" : 10,
+      "SCOPE_CATALOG" : null,
+      "SCOPE_SCHEMA" : null,
+      "SCOPE_TABLE" : null,
+      "SOURCE_DATA_TYPE" : null,
+      "SQL_DATA_TYPE" : 0,
+      "SQL_DATETIME_SUB" : 0,
+      "TABLE_SCHEMA" : null
+    },
+    "auto-incremented" : true,
+    "column-data-type" : {
+      "@uuid" : "df6b0076-a0bd-4291-b3e0-31a8723329aa",
+      "name" : "INT",
+      "full-name" : "INT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "INT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "52a1aa2e-e31e-4993-a5d5-eb99de44a376",
+        "name" : "INTEGER",
+        "default-mapped-class" : "java.lang.Integer",
+        "java-sql-type-group" : "integer",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 4
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "INT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 10,
+      "remarks" : null,
+      "schema" : {
+        "@uuid" : "7899a455-9270-491b-b793-98136fd87cbb",
+        "name" : null,
+        "full-name" : "",
+        "attributes" : { },
+        "catalog-name" : null,
+        "remarks" : ""
+      },
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : false,
+      "user-defined" : false
+    },
+    "decimal-digits" : 0,
+    "default-value" : null,
+    "generated" : false,
+    "hidden" : false,
+    "nullable" : false,
+    "ordinal-position" : 1,
+    "parent-partial" : false,
+    "part-of-foreign-key" : false,
+    "part-of-index" : true,
+    "part-of-primary-key" : true,
+    "part-of-unique-index" : true,
+    "privileges" : [ ],
+    "remarks" : "",
+    "schema" : {
+      "@uuid" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+      "name" : null,
+      "full-name" : "data_type",
+      "attributes" : { },
+      "catalog-name" : "data_type",
+      "remarks" : ""
+    },
+    "size" : 10,
+    "type" : "df6b0076-a0bd-4291-b3e0-31a8723329aa",
+    "width" : ""
+  }, {
+    "@uuid" : "c4c19870-b2b0-4495-a1d8-ab1b769e9a87",
+    "name" : "id",
+    "short-name" : "geotest.id",
+    "full-name" : "data_type.geotest.id",
+    "attributes" : {
+      "BUFFER_LENGTH" : 65535,
+      "CHARACTER_SET_NAME" : null,
+      "CHAR_OCTET_LENGTH" : null,
+      "COLLATION_NAME" : null,
+      "COLUMN_COMMENT" : "",
+      "COLUMN_TYPE" : "int(11)",
+      "GENERATION_EXPRESSION" : "",
+      "IS_NULLABLE" : "NO",
+      "NUM_PREC_RADIX" : 10,
+      "SCOPE_CATALOG" : null,
+      "SCOPE_SCHEMA" : null,
+      "SCOPE_TABLE" : null,
+      "SOURCE_DATA_TYPE" : null,
+      "SQL_DATA_TYPE" : 0,
+      "SQL_DATETIME_SUB" : 0,
+      "TABLE_SCHEMA" : null
+    },
+    "auto-incremented" : true,
+    "column-data-type" : "df6b0076-a0bd-4291-b3e0-31a8723329aa",
+    "decimal-digits" : 0,
+    "default-value" : null,
+    "generated" : false,
+    "hidden" : false,
+    "nullable" : false,
+    "ordinal-position" : 1,
+    "parent-partial" : false,
+    "part-of-foreign-key" : false,
+    "part-of-index" : true,
+    "part-of-primary-key" : true,
+    "part-of-unique-index" : true,
+    "privileges" : [ ],
+    "remarks" : "",
+    "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+    "size" : 10,
+    "type" : "df6b0076-a0bd-4291-b3e0-31a8723329aa",
+    "width" : ""
+  }, {
+    "@uuid" : "9442ab8a-0829-4283-bfb3-96a24fc0d54a",
+    "name" : "code",
+    "short-name" : "geotest.code",
+    "full-name" : "data_type.geotest.code",
+    "attributes" : {
+      "BUFFER_LENGTH" : 65535,
+      "CHARACTER_SET_NAME" : null,
+      "CHAR_OCTET_LENGTH" : null,
+      "COLLATION_NAME" : null,
+      "COLUMN_COMMENT" : "",
+      "COLUMN_TYPE" : "int(5)",
+      "GENERATION_EXPRESSION" : "",
+      "IS_NULLABLE" : "YES",
+      "NUM_PREC_RADIX" : 10,
+      "SCOPE_CATALOG" : null,
+      "SCOPE_SCHEMA" : null,
+      "SCOPE_TABLE" : null,
+      "SOURCE_DATA_TYPE" : null,
+      "SQL_DATA_TYPE" : 0,
+      "SQL_DATETIME_SUB" : 0,
+      "TABLE_SCHEMA" : null
+    },
+    "auto-incremented" : false,
+    "column-data-type" : "df6b0076-a0bd-4291-b3e0-31a8723329aa",
+    "decimal-digits" : 0,
+    "default-value" : null,
+    "generated" : false,
+    "hidden" : false,
+    "nullable" : true,
+    "ordinal-position" : 2,
+    "parent-partial" : false,
+    "part-of-foreign-key" : false,
+    "part-of-index" : false,
+    "part-of-primary-key" : false,
+    "part-of-unique-index" : false,
+    "privileges" : [ ],
+    "remarks" : "",
+    "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+    "size" : 10,
+    "type" : "df6b0076-a0bd-4291-b3e0-31a8723329aa",
+    "width" : ""
+  }, {
+    "@uuid" : "e8a8d63d-1344-4f4e-aea1-7d1df664bd93",
+    "name" : "g",
+    "short-name" : "geom.g",
+    "full-name" : "data_type.geom.g",
+    "attributes" : {
+      "BUFFER_LENGTH" : 65535,
+      "CHARACTER_SET_NAME" : null,
+      "CHAR_OCTET_LENGTH" : null,
+      "COLLATION_NAME" : null,
+      "COLUMN_COMMENT" : "",
+      "COLUMN_TYPE" : "geometry",
+      "GENERATION_EXPRESSION" : "",
+      "IS_NULLABLE" : "YES",
+      "NUM_PREC_RADIX" : 10,
+      "SCOPE_CATALOG" : null,
+      "SCOPE_SCHEMA" : null,
+      "SCOPE_TABLE" : null,
+      "SOURCE_DATA_TYPE" : null,
+      "SQL_DATA_TYPE" : 0,
+      "SQL_DATETIME_SUB" : 0,
+      "TABLE_SCHEMA" : null
+    },
+    "auto-incremented" : false,
+    "column-data-type" : {
+      "@uuid" : "70995f8b-ce41-4652-b45a-5df11f126ad6",
+      "name" : "GEOMETRY",
+      "full-name" : "data_type.GEOMETRY",
+      "attributes" : { },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : false,
+      "create-parameters" : "",
+      "database-specific-type-name" : "GEOMETRY",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "f29d56bf-ad3b-475c-9107-19f12e7cec15",
+        "name" : "BINARY",
+        "default-mapped-class" : "[B",
+        "java-sql-type-group" : "binary",
+        "vendor" : "java.sql",
+        "vendor-type-number" : -2
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : false,
+      "num-precision-radix" : 0,
+      "precision" : 0,
+      "remarks" : null,
+      "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+      "searchable" : "not searchable",
+      "type-mapped-class" : "[B",
+      "unsigned" : false,
+      "user-defined" : false
+    },
+    "decimal-digits" : 0,
+    "default-value" : null,
+    "generated" : false,
+    "hidden" : false,
+    "nullable" : true,
+    "ordinal-position" : 2,
+    "parent-partial" : false,
+    "part-of-foreign-key" : false,
+    "part-of-index" : false,
+    "part-of-primary-key" : false,
+    "part-of-unique-index" : false,
+    "privileges" : [ ],
+    "remarks" : "",
+    "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+    "size" : 65535,
+    "type" : "70995f8b-ce41-4652-b45a-5df11f126ad6",
+    "width" : ""
+  }, {
+    "@uuid" : "b029f141-e29f-4068-87c8-26b0341a01e9",
+    "name" : "descrip",
+    "short-name" : "geotest.descrip",
+    "full-name" : "data_type.geotest.descrip",
+    "attributes" : {
+      "BUFFER_LENGTH" : 65535,
+      "CHARACTER_SET_NAME" : "latin1",
+      "CHAR_OCTET_LENGTH" : 50,
+      "COLLATION_NAME" : "latin1_swedish_ci",
+      "COLUMN_COMMENT" : "",
+      "COLUMN_TYPE" : "varchar(50)",
+      "GENERATION_EXPRESSION" : "",
+      "IS_NULLABLE" : "YES",
+      "NUM_PREC_RADIX" : 10,
+      "SCOPE_CATALOG" : null,
+      "SCOPE_SCHEMA" : null,
+      "SCOPE_TABLE" : null,
+      "SOURCE_DATA_TYPE" : null,
+      "SQL_DATA_TYPE" : 0,
+      "SQL_DATETIME_SUB" : 0,
+      "TABLE_SCHEMA" : null
+    },
+    "auto-incremented" : false,
+    "column-data-type" : {
+      "@uuid" : "f7f7402c-ff88-4d39-a6fc-4a7a41b61957",
+      "name" : "VARCHAR",
+      "full-name" : "VARCHAR",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "(M) [CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "VARCHAR",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "1ad5c507-c485-4bec-9b14-7c9f2f3448df",
+        "name" : "VARCHAR",
+        "default-mapped-class" : "java.lang.String",
+        "java-sql-type-group" : "character",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 12
+      },
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "VARCHAR",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 65535,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    },
+    "decimal-digits" : 0,
+    "default-value" : null,
+    "generated" : false,
+    "hidden" : false,
+    "nullable" : true,
+    "ordinal-position" : 3,
+    "parent-partial" : false,
+    "part-of-foreign-key" : false,
+    "part-of-index" : false,
+    "part-of-primary-key" : false,
+    "part-of-unique-index" : false,
+    "privileges" : [ ],
+    "remarks" : "",
+    "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+    "size" : 50,
+    "type" : "f7f7402c-ff88-4d39-a6fc-4a7a41b61957",
+    "width" : "(50)"
+  }, {
+    "@uuid" : "b56be8e6-0683-495a-85a2-d8f25e7dbd0e",
+    "name" : "g",
+    "short-name" : "geotest.g",
+    "full-name" : "data_type.geotest.g",
+    "attributes" : {
+      "BUFFER_LENGTH" : 65535,
+      "CHARACTER_SET_NAME" : null,
+      "CHAR_OCTET_LENGTH" : null,
+      "COLLATION_NAME" : null,
+      "COLUMN_COMMENT" : "",
+      "COLUMN_TYPE" : "geometry",
+      "GENERATION_EXPRESSION" : "",
+      "IS_NULLABLE" : "YES",
+      "NUM_PREC_RADIX" : 10,
+      "SCOPE_CATALOG" : null,
+      "SCOPE_SCHEMA" : null,
+      "SCOPE_TABLE" : null,
+      "SOURCE_DATA_TYPE" : null,
+      "SQL_DATA_TYPE" : 0,
+      "SQL_DATETIME_SUB" : 0,
+      "TABLE_SCHEMA" : null
+    },
+    "auto-incremented" : false,
+    "column-data-type" : "70995f8b-ce41-4652-b45a-5df11f126ad6",
+    "decimal-digits" : 0,
+    "default-value" : null,
+    "generated" : false,
+    "hidden" : false,
+    "nullable" : true,
+    "ordinal-position" : 4,
+    "parent-partial" : false,
+    "part-of-foreign-key" : false,
+    "part-of-index" : false,
+    "part-of-primary-key" : false,
+    "part-of-unique-index" : false,
+    "privileges" : [ ],
+    "remarks" : "",
+    "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+    "size" : 65535,
+    "type" : "70995f8b-ce41-4652-b45a-5df11f126ad6",
+    "width" : ""
+  } ],
+  "catalog" : {
+    "@uuid" : "b75e2103-7600-4368-8265-b17956ec4c30",
+    "name" : "catalog",
+    "full-name" : "catalog",
+    "crawl-info" : {
+      "@uuid" : "8113eb91-6022-4120-a10c-23fcd8d11db6",
+      "crawl-timestamp" : "2020-11-18 05:21:32.999",
+      "crawl-timestamp-instant" : {
+        "@uuid" : "96ba4cc8-2a4f-4672-8412-57bb39da6b0f",
+        "epoch-second" : 1605676892,
+        "nano" : 999000000
+      },
+      "database-version" : {
+        "@uuid" : "afd9849c-e8b6-4c3a-b117-521bdd87aa6b",
+        "product-name" : "MySQL",
+        "product-version" : "5.7.32-0ubuntu0.18.04.1"
+      },
+      "jdbc-driver-version" : {
+        "@uuid" : "e3da1e47-efe0-43ef-be20-a25a31b6635d",
+        "product-name" : "MySQL Connector/J",
+        "product-version" : "mysql-connector-java-8.0.21 (Revision: 33f65445a1bcc544eb0120491926484da168f199)"
+      },
+      "jvm-version" : {
+        "@uuid" : "d7b4d5c5-580b-444e-8df2-1fc65f0ef4a0",
+        "product-name" : "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM",
+        "product-version" : "1.8.0_261-b12"
+      },
+      "operating-system-version" : {
+        "@uuid" : "b9daa8f6-6436-44df-b7d0-11bc9d48b017",
+        "product-name" : "Linux",
+        "product-version" : "5.4.0-52-generic"
+      },
+      "run-id" : "e32b0dc9-7354-4bdc-91d6-eae529041c98",
+      "schema-crawler-version" : {
+        "@uuid" : "d20caeb8-df19-4305-a611-3f3fcdb627a1",
+        "product-name" : "SchemaCrawler",
+        "product-version" : "16.9.4"
+      }
+    },
+    "database-info" : {
+      "@uuid" : "ffb5f6f6-bd82-406e-a655-93ab492554b8",
+      "product-name" : "MySQL",
+      "product-version" : "5.7.32-0ubuntu0.18.04.1",
+      "properties" : [ {
+        "@uuid" : "3001c076-c27f-4576-b450-d00754516666",
+        "name" : "allProceduresAreCallable",
+        "description" : "all procedures are callable",
+        "value" : false
+      }, {
+        "@uuid" : "064a4dac-7cc3-4f0f-a95e-97605ed92dc0",
+        "name" : "allTablesAreSelectable",
+        "description" : "all tables are selectable",
+        "value" : false
+      }, {
+        "@uuid" : "d1c170f6-1dad-48de-98b3-518f32e786ce",
+        "name" : "autoCommitFailureClosesAllResultSets",
+        "description" : "auto commit failure closes all result sets",
+        "value" : false
+      }, {
+        "@uuid" : "d0157a0c-7b03-4ab6-b9d8-01137165dfc1",
+        "name" : "getCatalogSeparator",
+        "description" : "catalog separator",
+        "value" : "."
+      }, {
+        "@uuid" : "43e2cf7a-7c2b-4ea9-a519-7b12239ceb15",
+        "name" : "getCatalogTerm",
+        "description" : "catalog term",
+        "value" : "database"
+      }, {
+        "@uuid" : "a8c1ab0e-ae94-47c5-910d-02867c7da92f",
+        "name" : "getCatalogs",
+        "description" : "catalogs",
+        "value" : [ "classicmodels", "data_type", "data_type_schema", "data_type_schema_validated", "data_type_validated", "employees", "employees_validated", "information_schema", "menagerie", "mysql", "performance_schema", "sakila", "sakila_validated", "schemacrawler", "sqlschema", "sys", "world", "world_validated", "world_x", "world_x_validated" ]
+      }, {
+        "@uuid" : "66ac1ba5-02b3-4b26-a4c0-127df517bdf6",
+        "name" : "getClientInfoProperties",
+        "description" : "client info properties",
+        "value" : [ ]
+      }, {
+        "@uuid" : "cfb53dad-7380-4385-9ee8-bcae85c04caa",
+        "name" : "dataDefinitionCausesTransactionCommit",
+        "description" : "data definition causes transaction commit",
+        "value" : true
+      }, {
+        "@uuid" : "c2173608-4230-417f-81ad-fb5022983515",
+        "name" : "dataDefinitionIgnoredInTransactions",
+        "description" : "data definition ignored in transactions",
+        "value" : false
+      }, {
+        "@uuid" : "03ec12e9-def4-42cf-a0a7-a5dcd8c54061",
+        "name" : "getDatabaseMajorVersion",
+        "description" : "database major version",
+        "value" : 5
+      }, {
+        "@uuid" : "07584235-d4bb-4682-ad04-a3fea881e1f4",
+        "name" : "getDatabaseMinorVersion",
+        "description" : "database minor version",
+        "value" : 7
+      }, {
+        "@uuid" : "0c55c546-f1bd-45ad-a561-c2cc7e89c654",
+        "name" : "getDefaultTransactionIsolation",
+        "description" : "default transaction isolation",
+        "value" : 2
+      }, {
+        "@uuid" : "55a507a6-8a8e-44f1-9fa2-f8a70e474091",
+        "name" : "deletesAreDetectedForTYPE_FORWARD_ONLYResultSets",
+        "description" : "deletes are detected for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "aae5f2dc-8f93-4bfc-b132-a5c142846ad6",
+        "name" : "deletesAreDetectedForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "deletes are detected for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "07705fae-7402-4e4d-b01e-dab2eb602962",
+        "name" : "deletesAreDetectedForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "deletes are detected for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "ba671e2f-75c3-48b9-b02a-6ca2c0b475a5",
+        "name" : "doesMaxRowSizeIncludeBlobs",
+        "description" : "does max row size include blobs",
+        "value" : true
+      }, {
+        "@uuid" : "3b5910f4-74ff-4939-b409-2d9bfea0e798",
+        "name" : "getDriverMajorVersion",
+        "description" : "driver major version",
+        "value" : 8
+      }, {
+        "@uuid" : "cd9aac93-bcdc-4b68-b7b1-83428968f7cf",
+        "name" : "getDriverMinorVersion",
+        "description" : "driver minor version",
+        "value" : 0
+      }, {
+        "@uuid" : "1e4f58f4-3a73-45d4-96e5-defcf0d0078e",
+        "name" : "getExtraNameCharacters",
+        "description" : "extra name characters",
+        "value" : [ "#@" ]
+      }, {
+        "@uuid" : "997255d4-673e-4188-9481-45286e630206",
+        "name" : "generatedKeyAlwaysReturned",
+        "description" : "generated key always returned",
+        "value" : true
+      }, {
+        "@uuid" : "621a5a50-b2e5-4c40-9b26-f6b133ff7b0e",
+        "name" : "getIdentifierQuoteString",
+        "description" : "identifier quote string",
+        "value" : "`"
+      }, {
+        "@uuid" : "bf59b732-2f76-4617-84a7-e98a6d488004",
+        "name" : "insertsAreDetectedForTYPE_FORWARD_ONLYResultSets",
+        "description" : "inserts are detected for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "c2b02efa-6df2-4ba9-8757-1066879a40f1",
+        "name" : "insertsAreDetectedForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "inserts are detected for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "4a665e44-9b3c-433c-b5f3-d8c215fda494",
+        "name" : "insertsAreDetectedForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "inserts are detected for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "dea5bb99-b514-4213-b12b-62bf15afd568",
+        "name" : "isCatalogAtStart",
+        "description" : "is catalog at start",
+        "value" : true
+      }, {
+        "@uuid" : "5471eb84-1de5-4658-bd37-a715d6bbb83b",
+        "name" : "isReadOnly",
+        "description" : "is read only",
+        "value" : false
+      }, {
+        "@uuid" : "8433aef8-0b75-4506-a52c-0e974123582f",
+        "name" : "getJDBCMajorVersion",
+        "description" : "JDBC major version",
+        "value" : 4
+      }, {
+        "@uuid" : "7e6e10be-c387-4957-9703-e012b64fad34",
+        "name" : "getJDBCMinorVersion",
+        "description" : "JDBC minor version",
+        "value" : 2
+      }, {
+        "@uuid" : "26e79bb1-f1db-48ef-b025-f4c18f33d835",
+        "name" : "locatorsUpdateCopy",
+        "description" : "locators update copy",
+        "value" : true
+      }, {
+        "@uuid" : "bf8be55d-2002-47ff-aec7-ba3cdcaab82b",
+        "name" : "getMaxBinaryLiteralLength",
+        "description" : "max binary literal length",
+        "value" : 16777208
+      }, {
+        "@uuid" : "80736e63-bf2e-418d-9d30-ac3d20b0bba5",
+        "name" : "getMaxCatalogNameLength",
+        "description" : "max catalog name length",
+        "value" : 32
+      }, {
+        "@uuid" : "6c92c8c3-2a7c-4559-afc5-f4e514c7bb24",
+        "name" : "getMaxCharLiteralLength",
+        "description" : "max char literal length",
+        "value" : 16777208
+      }, {
+        "@uuid" : "023827f5-7fde-42b5-8278-11e0dce5e7de",
+        "name" : "getMaxColumnNameLength",
+        "description" : "max column name length",
+        "value" : 64
+      }, {
+        "@uuid" : "bdd32431-5626-449c-8f44-187059d42b60",
+        "name" : "getMaxColumnsInGroupBy",
+        "description" : "max columns in group by",
+        "value" : 64
+      }, {
+        "@uuid" : "31bb2411-6bab-48c6-a0bd-6889253c6f19",
+        "name" : "getMaxColumnsInIndex",
+        "description" : "max columns in index",
+        "value" : 16
+      }, {
+        "@uuid" : "d2389eb0-f596-43b5-b8a0-8d68055695fc",
+        "name" : "getMaxColumnsInOrderBy",
+        "description" : "max columns in order by",
+        "value" : 64
+      }, {
+        "@uuid" : "96a706f5-6b95-4989-a2f4-c2981ab9d617",
+        "name" : "getMaxColumnsInSelect",
+        "description" : "max columns in select",
+        "value" : 256
+      }, {
+        "@uuid" : "d428b11f-c615-4ae8-9441-c38cb52086bb",
+        "name" : "getMaxColumnsInTable",
+        "description" : "max columns in table",
+        "value" : 512
+      }, {
+        "@uuid" : "8bfa4b00-e20e-4ca5-9607-c9e3fd0a484d",
+        "name" : "getMaxConnections",
+        "description" : "max connections",
+        "value" : 0
+      }, {
+        "@uuid" : "7da1f122-cc6d-4b84-9bbc-a2d6a3804872",
+        "name" : "getMaxCursorNameLength",
+        "description" : "max cursor name length",
+        "value" : 64
+      }, {
+        "@uuid" : "89e2f06c-4949-4b1a-841b-a1dff6707f2f",
+        "name" : "getMaxIndexLength",
+        "description" : "max index length",
+        "value" : 256
+      }, {
+        "@uuid" : "772022e1-61f2-4bf7-8923-b03e325e88e7",
+        "name" : "getMaxLogicalLobSize",
+        "description" : "max logical lob size",
+        "value" : 0
+      }, {
+        "@uuid" : "c496b2de-87a9-4083-8628-d77eed9db17a",
+        "name" : "getMaxProcedureNameLength",
+        "description" : "max procedure name length",
+        "value" : 0
+      }, {
+        "@uuid" : "2644189b-ec7f-408b-8a69-f6af6ba5ba3c",
+        "name" : "getMaxRowSize",
+        "description" : "max row size",
+        "value" : 2147483639
+      }, {
+        "@uuid" : "581497fd-35b0-4473-8b86-8bdf87de236f",
+        "name" : "getMaxSchemaNameLength",
+        "description" : "max schema name length",
+        "value" : 0
+      }, {
+        "@uuid" : "79984818-4033-457d-9b65-f581bc0acf50",
+        "name" : "getMaxStatementLength",
+        "description" : "max statement length",
+        "value" : 65531
+      }, {
+        "@uuid" : "8b3b9204-1c52-441c-9f01-c63ed055186c",
+        "name" : "getMaxStatements",
+        "description" : "max statements",
+        "value" : 0
+      }, {
+        "@uuid" : "b9dcbedb-b43c-4d16-b73b-951ff5cd1d47",
+        "name" : "getMaxTableNameLength",
+        "description" : "max table name length",
+        "value" : 64
+      }, {
+        "@uuid" : "7285aba2-89cf-4f8e-9c4c-b29320b4733f",
+        "name" : "getMaxTablesInSelect",
+        "description" : "max tables in select",
+        "value" : 256
+      }, {
+        "@uuid" : "f68252df-153a-4b80-8403-c14d2f9f0976",
+        "name" : "getMaxUserNameLength",
+        "description" : "max user name length",
+        "value" : 16
+      }, {
+        "@uuid" : "fbab810d-f554-491b-a10c-5ac620fa0032",
+        "name" : "nullPlusNonNullIsNull",
+        "description" : "null plus non null is null",
+        "value" : true
+      }, {
+        "@uuid" : "0e26b802-b5d0-43b6-9188-365d9a61621f",
+        "name" : "nullsAreSortedAtEnd",
+        "description" : "nulls are sorted at end",
+        "value" : false
+      }, {
+        "@uuid" : "55e246ee-5f83-4c96-be8b-5f67cd9bbeb9",
+        "name" : "nullsAreSortedAtStart",
+        "description" : "nulls are sorted at start",
+        "value" : false
+      }, {
+        "@uuid" : "ce40a100-eb7b-4bd8-9a9f-c29c658c1f16",
+        "name" : "nullsAreSortedHigh",
+        "description" : "nulls are sorted high",
+        "value" : false
+      }, {
+        "@uuid" : "9a53effb-449d-4ad9-af12-c38ee8a52bc9",
+        "name" : "nullsAreSortedLow",
+        "description" : "nulls are sorted low",
+        "value" : true
+      }, {
+        "@uuid" : "a303baf9-ca18-4f96-9046-0acb3e192c13",
+        "name" : "getNumericFunctions",
+        "description" : "numeric functions",
+        "value" : [ "ABS", "ACOS", "ASIN", "ATAN", "ATAN2", "BIT_COUNT", "CEILING", "COS", "COT", "DEGREES", "EXP", "FLOOR", "LOG", "LOG10", "MAX", "MIN", "MOD", "PI", "POW", "POWER", "RADIANS", "RAND", "ROUND", "SIN", "SQRT", "TAN", "TRUNCATE" ]
+      }, {
+        "@uuid" : "83c80625-b015-40b4-b2f5-5b74fe6c0849",
+        "name" : "othersDeletesAreVisibleForTYPE_FORWARD_ONLYResultSets",
+        "description" : "others deletes are visible for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "5cf14997-b05c-4d2c-8e00-da5e8fa5b224",
+        "name" : "othersDeletesAreVisibleForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "others deletes are visible for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "aac1d063-c84f-4ffd-bc84-07c9bbdf04b0",
+        "name" : "othersDeletesAreVisibleForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "others deletes are visible for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "6ca9b5ea-a76e-4963-81aa-f1c1c0542da4",
+        "name" : "othersInsertsAreVisibleForTYPE_FORWARD_ONLYResultSets",
+        "description" : "others inserts are visible for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "22a71adc-5ce0-4437-a389-0e69cbd9b547",
+        "name" : "othersInsertsAreVisibleForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "others inserts are visible for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "22d8d4f6-e1aa-4307-930e-135e29e7e201",
+        "name" : "othersInsertsAreVisibleForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "others inserts are visible for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "7b19e8f5-bfc2-4049-8ecd-9a5fcf7bf0bc",
+        "name" : "othersUpdatesAreVisibleForTYPE_FORWARD_ONLYResultSets",
+        "description" : "others updates are visible for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "c4b11594-0ac6-48f6-9113-82d9b27f33a3",
+        "name" : "othersUpdatesAreVisibleForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "others updates are visible for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "ed76f36e-7985-4729-878e-61ba1571dc8a",
+        "name" : "othersUpdatesAreVisibleForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "others updates are visible for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "2902ba51-c182-4e3c-9467-021ac2e3ca34",
+        "name" : "ownDeletesAreVisibleForTYPE_FORWARD_ONLYResultSets",
+        "description" : "own deletes are visible for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "23eb4987-019b-4d87-bb88-eba3275d636a",
+        "name" : "ownDeletesAreVisibleForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "own deletes are visible for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "7ecb55d1-67cf-443b-999a-814725f65ab0",
+        "name" : "ownDeletesAreVisibleForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "own deletes are visible for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "8b88a123-008e-4234-9ec3-fe8405f131ee",
+        "name" : "ownInsertsAreVisibleForTYPE_FORWARD_ONLYResultSets",
+        "description" : "own inserts are visible for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "4a0fea3a-91ed-47da-824d-1a834791ca45",
+        "name" : "ownInsertsAreVisibleForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "own inserts are visible for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "9f40ca91-4036-4a1b-8c43-fa9a4849788c",
+        "name" : "ownInsertsAreVisibleForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "own inserts are visible for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "1cb12d8c-d183-4212-bc7f-9228e6b55a35",
+        "name" : "ownUpdatesAreVisibleForTYPE_FORWARD_ONLYResultSets",
+        "description" : "own updates are visible for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "930e4c38-2419-4dec-bc00-d9317d90fcc8",
+        "name" : "ownUpdatesAreVisibleForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "own updates are visible for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "3981673c-44e9-4687-944e-4db2fd24d940",
+        "name" : "ownUpdatesAreVisibleForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "own updates are visible for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "b193959e-8107-4bc9-82c7-00096ea4dd62",
+        "name" : "getProcedureTerm",
+        "description" : "procedure term",
+        "value" : "PROCEDURE"
+      }, {
+        "@uuid" : "b9b31477-c490-4f60-a895-a93875718946",
+        "name" : "getResultSetHoldability",
+        "description" : "result set holdability",
+        "value" : 1
+      }, {
+        "@uuid" : "0d83671f-894d-4f30-9fc9-60a52701ae5a",
+        "name" : "getRowIdLifetime",
+        "description" : "row id lifetime",
+        "value" : "ROWID_UNSUPPORTED"
+      }, {
+        "@uuid" : "338f7a22-cf64-4d64-bb7f-dd05e38d2599",
+        "name" : "getSchemaTerm",
+        "description" : "schema term",
+        "value" : ""
+      }, {
+        "@uuid" : "d2e7efd7-5bc4-458b-9570-06540f919fd1",
+        "name" : "getSchemas",
+        "description" : "schemas",
+        "value" : [ ]
+      }, {
+        "@uuid" : "a19fa68c-6e89-4f9a-97b1-f84bcf2c4e40",
+        "name" : "getSearchStringEscape",
+        "description" : "search string escape",
+        "value" : "\\"
+      }, {
+        "@uuid" : "e2f691f6-19d3-4adf-ad88-f2532de4a1a6",
+        "name" : "getSQLKeywords",
+        "description" : "SQL keywords",
+        "value" : [ "ACCESSIBLE", "ADD", "ANALYZE", "ASC", "BEFORE", "CASCADE", "CHANGE", "CONTINUE", "DATABASE", "DATABASES", "DAY_HOUR", "DAY_MICROSECOND", "DAY_MINUTE", "DAY_SECOND", "DELAYED", "DESC", "DISTINCTROW", "DIV", "DUAL", "ELSEIF", "EMPTY", "ENCLOSED", "ESCAPED", "EXIT", "EXPLAIN", "FIRST_VALUE", "FLOAT4", "FLOAT8", "FORCE", "FULLTEXT", "GENERATED", "GROUPS", "HIGH_PRIORITY", "HOUR_MICROSECOND", "HOUR_MINUTE", "HOUR_SECOND", "IF", "IGNORE", "INDEX", "INFILE", "INT1", "INT2", "INT3", "INT4", "INT8", "IO_AFTER_GTIDS", "IO_BEFORE_GTIDS", "ITERATE", "JSON_TABLE", "KEY", "KEYS", "KILL", "LAG", "LAST_VALUE", "LEAD", "LEAVE", "LIMIT", "LINEAR", "LINES", "LOAD", "LOCK", "LONG", "LONGBLOB", "LONGTEXT", "LOOP", "LOW_PRIORITY", "MASTER_BIND", "MASTER_SSL_VERIFY_SERVER_CERT", "MAXVALUE", "MEDIUMBLOB", "MEDIUMINT", "MEDIUMTEXT", "MIDDLEINT", "MINUTE_MICROSECOND", "MINUTE_SECOND", "NO_WRITE_TO_BINLOG", "NTH_VALUE", "NTILE", "OPTIMIZE", "OPTIMIZER_COSTS", "OPTION", "OPTIONALLY", "OUTFILE", "PERSIST", "PERSIST_ONLY", "PURGE", "READ", "READ_WRITE", "REGEXP", "RENAME", "REPEAT", "REPLACE", "REQUIRE", "RESIGNAL", "RESTRICT", "RLIKE", "SCHEMA", "SCHEMAS", "SECOND_MICROSECOND", "SEPARATOR", "SHOW", "SIGNAL", "SPATIAL", "SQL_BIG_RESULT", "SQL_CALC_FOUND_ROWS", "SQL_SMALL_RESULT", "SSL", "STARTING", "STORED", "STRAIGHT_JOIN", "TERMINATED", "TINYBLOB", "TINYINT", "TINYTEXT", "UNDO", "UNLOCK", "UNSIGNED", "USAGE", "USE", "UTC_DATE", "UTC_TIME", "UTC_TIMESTAMP", "VARBINARY", "VARCHARACTER", "VIRTUAL", "WHILE", "WRITE", "XOR", "YEAR_MONTH", "ZEROFILL" ]
+      }, {
+        "@uuid" : "e80cead5-ac0c-4e98-b027-adddf528c6b3",
+        "name" : "getSQLStateType",
+        "description" : "SQL state type",
+        "value" : 2
+      }, {
+        "@uuid" : "7c3162be-41a1-42ab-8b96-5ce084fa0825",
+        "name" : "storesLowerCaseIdentifiers",
+        "description" : "stores lower case identifiers",
+        "value" : false
+      }, {
+        "@uuid" : "9e7c7178-9e2c-465d-b14f-dbc0a71c5f2a",
+        "name" : "storesLowerCaseQuotedIdentifiers",
+        "description" : "stores lower case quoted identifiers",
+        "value" : false
+      }, {
+        "@uuid" : "fcc32bef-2aa8-40d6-9512-8ada1b226057",
+        "name" : "storesMixedCaseIdentifiers",
+        "description" : "stores mixed case identifiers",
+        "value" : true
+      }, {
+        "@uuid" : "4ff91993-e7e5-409a-92f2-bc768aa30060",
+        "name" : "storesMixedCaseQuotedIdentifiers",
+        "description" : "stores mixed case quoted identifiers",
+        "value" : true
+      }, {
+        "@uuid" : "7afbcc33-9e97-4206-b635-cd6a90476b44",
+        "name" : "storesUpperCaseIdentifiers",
+        "description" : "stores upper case identifiers",
+        "value" : false
+      }, {
+        "@uuid" : "1970b1d0-675c-41a7-b065-41de41290cf7",
+        "name" : "storesUpperCaseQuotedIdentifiers",
+        "description" : "stores upper case quoted identifiers",
+        "value" : true
+      }, {
+        "@uuid" : "78f5fe71-1fe3-4ca3-b731-e16980001e10",
+        "name" : "getStringFunctions",
+        "description" : "string functions",
+        "value" : [ "ASCII", "BIN", "BIT_LENGTH", "CHAR", "CHARACTER_LENGTH", "CHAR_LENGTH", "CONCAT", "CONCAT_WS", "CONV", "ELT", "EXPORT_SET", "FIELD", "FIND_IN_SET", "HEX", "INSERT", "INSTR", "LCASE", "LEFT", "LENGTH", "LOAD_FILE", "LOCATE", "LOCATE", "LOWER", "LPAD", "LTRIM", "MAKE_SET", "MATCH", "MID", "OCT", "OCTET_LENGTH", "ORD", "POSITION", "QUOTE", "REPEAT", "REPLACE", "REVERSE", "RIGHT", "RPAD", "RTRIM", "SOUNDEX", "SPACE", "STRCMP", "SUBSTRING", "SUBSTRING", "SUBSTRING", "SUBSTRING", "SUBSTRING_INDEX", "TRIM", "UCASE", "UPPER" ]
+      }, {
+        "@uuid" : "6d8a61be-a7e8-49eb-b0c8-218bf2fa7b4f",
+        "name" : "supportsAlterTableWithAddColumn",
+        "description" : "supports alter table with add column",
+        "value" : true
+      }, {
+        "@uuid" : "3e5208be-9be3-4b66-8b96-f5be14da763e",
+        "name" : "supportsAlterTableWithDropColumn",
+        "description" : "supports alter table with drop column",
+        "value" : true
+      }, {
+        "@uuid" : "434c52d9-0d36-4051-bb02-1ce35faf220f",
+        "name" : "supportsANSI92EntryLevelSQL",
+        "description" : "supports ANSI92 entry level SQL",
+        "value" : true
+      }, {
+        "@uuid" : "a02b0cad-09bb-4498-b60d-8fdc6e9a244c",
+        "name" : "supportsANSI92FullSQL",
+        "description" : "supports ANSI92 full SQL",
+        "value" : false
+      }, {
+        "@uuid" : "a78d9a98-17d2-482e-ab89-0418926be537",
+        "name" : "supportsANSI92IntermediateSQL",
+        "description" : "supports ANSI92 intermediate SQL",
+        "value" : false
+      }, {
+        "@uuid" : "66188a03-f09e-456f-8e24-37ac8bf17b55",
+        "name" : "supportsBatchUpdates",
+        "description" : "supports batch updates",
+        "value" : true
+      }, {
+        "@uuid" : "e5f0a269-c668-4720-9546-186a895fab42",
+        "name" : "supportsCatalogsInDataManipulation",
+        "description" : "supports catalogs in data manipulation",
+        "value" : true
+      }, {
+        "@uuid" : "078b5978-bb2f-4c70-89ff-7eeb3d1157a0",
+        "name" : "supportsCatalogsInIndexDefinitions",
+        "description" : "supports catalogs in index definitions",
+        "value" : true
+      }, {
+        "@uuid" : "3fec5993-c7ba-4dc0-9d2c-3ba042bf3e4f",
+        "name" : "supportsCatalogsInPrivilegeDefinitions",
+        "description" : "supports catalogs in privilege definitions",
+        "value" : true
+      }, {
+        "@uuid" : "05f383fd-d371-4c4f-bc9c-5f783e9fb5fc",
+        "name" : "supportsCatalogsInProcedureCalls",
+        "description" : "supports catalogs in procedure calls",
+        "value" : true
+      }, {
+        "@uuid" : "4ef36b51-0643-437b-9cf4-b1eab67a7584",
+        "name" : "supportsCatalogsInTableDefinitions",
+        "description" : "supports catalogs in table definitions",
+        "value" : true
+      }, {
+        "@uuid" : "d0ebceb0-ac0f-484d-8ad4-2cc78045d1c7",
+        "name" : "supportsColumnAliasing",
+        "description" : "supports column aliasing",
+        "value" : true
+      }, {
+        "@uuid" : "fa21b161-cad1-48c4-a077-076a0826749e",
+        "name" : "supportsConvert",
+        "description" : "supports convert",
+        "value" : false
+      }, {
+        "@uuid" : "814af7a5-6d61-4d09-b3b5-4dadcaaa1780",
+        "name" : "supportsCoreSQLGrammar",
+        "description" : "supports core SQL grammar",
+        "value" : true
+      }, {
+        "@uuid" : "175fbf2d-2eca-4a7a-b595-6ba82d624657",
+        "name" : "supportsCorrelatedSubqueries",
+        "description" : "supports correlated subqueries",
+        "value" : true
+      }, {
+        "@uuid" : "e484b821-654a-461c-8a12-b634be36a0c7",
+        "name" : "supportsDataDefinitionAndDataManipulationTransactions",
+        "description" : "supports data definition and data manipulation transactions",
+        "value" : false
+      }, {
+        "@uuid" : "b381a750-e8be-4a31-a72c-c5e5e90158b5",
+        "name" : "supportsDataManipulationTransactionsOnly",
+        "description" : "supports data manipulation transactions only",
+        "value" : false
+      }, {
+        "@uuid" : "65dfa10f-68a1-45a3-a3ff-5481d81ddcbd",
+        "name" : "supportsDifferentTableCorrelationNames",
+        "description" : "supports different table correlation names",
+        "value" : true
+      }, {
+        "@uuid" : "cfe74649-289b-4385-9e29-495e50760722",
+        "name" : "supportsExpressionsInOrderBy",
+        "description" : "supports expressions in order by",
+        "value" : true
+      }, {
+        "@uuid" : "84ef1c40-91de-4926-9b8e-5026d42b764d",
+        "name" : "supportsExtendedSQLGrammar",
+        "description" : "supports extended SQL grammar",
+        "value" : false
+      }, {
+        "@uuid" : "360fc967-ff7b-4a5e-a79c-c64bb68c4991",
+        "name" : "supportsFullOuterJoins",
+        "description" : "supports full outer joins",
+        "value" : false
+      }, {
+        "@uuid" : "eb58ec74-8c5b-484c-bc2f-d9ca82eeb885",
+        "name" : "supportsGetGeneratedKeys",
+        "description" : "supports get generated keys",
+        "value" : true
+      }, {
+        "@uuid" : "bbe3579f-f454-483c-987e-b9729944ffbb",
+        "name" : "supportsGroupBy",
+        "description" : "supports group by",
+        "value" : true
+      }, {
+        "@uuid" : "3cf024c4-e05e-4008-8182-f18aec4e9492",
+        "name" : "supportsGroupByBeyondSelect",
+        "description" : "supports group by beyond select",
+        "value" : true
+      }, {
+        "@uuid" : "ebaac302-a7ff-456e-89b3-f07b02ba31b9",
+        "name" : "supportsGroupByUnrelated",
+        "description" : "supports group by unrelated",
+        "value" : true
+      }, {
+        "@uuid" : "4198a2b0-ee25-41e7-a134-fae70c4f6d48",
+        "name" : "supportsIntegrityEnhancementFacility",
+        "description" : "supports integrity enhancement facility",
+        "value" : false
+      }, {
+        "@uuid" : "8576130a-3d7f-48a9-839e-ea68dfb050e3",
+        "name" : "supportsLikeEscapeClause",
+        "description" : "supports like escape clause",
+        "value" : true
+      }, {
+        "@uuid" : "fc4d94b4-b1c1-466b-8a1b-e9cd1fc99752",
+        "name" : "supportsLimitedOuterJoins",
+        "description" : "supports limited outer joins",
+        "value" : true
+      }, {
+        "@uuid" : "b5befa5d-4b17-4286-ace4-23733fecf4be",
+        "name" : "supportsMinimumSQLGrammar",
+        "description" : "supports minimum SQL grammar",
+        "value" : true
+      }, {
+        "@uuid" : "c9d45072-b10b-4a59-9bc5-4162af610b09",
+        "name" : "supportsMixedCaseIdentifiers",
+        "description" : "supports mixed case identifiers",
+        "value" : true
+      }, {
+        "@uuid" : "3d696d00-a617-4a27-b3c0-571a478dab23",
+        "name" : "supportsMixedCaseQuotedIdentifiers",
+        "description" : "supports mixed case quoted identifiers",
+        "value" : true
+      }, {
+        "@uuid" : "d50af287-d589-4191-bbfa-139522bbb0cd",
+        "name" : "supportsMultipleOpenResults",
+        "description" : "supports multiple open results",
+        "value" : true
+      }, {
+        "@uuid" : "8a928ba3-e657-4823-9323-432981c8352d",
+        "name" : "supportsMultipleResultSets",
+        "description" : "supports multiple result sets",
+        "value" : true
+      }, {
+        "@uuid" : "d527fb9f-9918-4e59-bb4b-1c7d7a31ad1a",
+        "name" : "supportsMultipleTransactions",
+        "description" : "supports multiple transactions",
+        "value" : true
+      }, {
+        "@uuid" : "38084051-3f7d-4b6b-a019-595af27d2050",
+        "name" : "supportsNamedParameters",
+        "description" : "supports named parameters",
+        "value" : false
+      }, {
+        "@uuid" : "600b077f-0f80-45f6-9ba7-e1ae393855d7",
+        "name" : "supportsNonNullableColumns",
+        "description" : "supports non nullable columns",
+        "value" : true
+      }, {
+        "@uuid" : "a1a64dab-f1ba-499e-a2ea-ec36486128d1",
+        "name" : "supportsOpenCursorsAcrossCommit",
+        "description" : "supports open cursors across commit",
+        "value" : false
+      }, {
+        "@uuid" : "59ea0965-a60f-423e-b98e-e86b60a4eada",
+        "name" : "supportsOpenCursorsAcrossRollback",
+        "description" : "supports open cursors across rollback",
+        "value" : false
+      }, {
+        "@uuid" : "c1dbe354-91db-4358-b07e-d9f92e6c6f4d",
+        "name" : "supportsOpenStatementsAcrossCommit",
+        "description" : "supports open statements across commit",
+        "value" : false
+      }, {
+        "@uuid" : "b6f89847-7069-4f45-ac2a-5c8ca8852b27",
+        "name" : "supportsOpenStatementsAcrossRollback",
+        "description" : "supports open statements across rollback",
+        "value" : false
+      }, {
+        "@uuid" : "bf1b7f4e-e374-4d75-9e70-6320dc0fbd68",
+        "name" : "supportsOrderByUnrelated",
+        "description" : "supports order by unrelated",
+        "value" : false
+      }, {
+        "@uuid" : "cc474e24-9299-44b5-afb2-f1a9b8b96be1",
+        "name" : "supportsOuterJoins",
+        "description" : "supports outer joins",
+        "value" : true
+      }, {
+        "@uuid" : "7ce5898f-0cd4-4bb9-87f5-8b98bb93d96b",
+        "name" : "supportsPositionedDelete",
+        "description" : "supports positioned delete",
+        "value" : false
+      }, {
+        "@uuid" : "b346d7bd-0944-4aad-bd4e-d0fef3cd5246",
+        "name" : "supportsPositionedUpdate",
+        "description" : "supports positioned update",
+        "value" : false
+      }, {
+        "@uuid" : "29ba9d1f-f059-4807-9288-ffc3a62a462b",
+        "name" : "supportsRefCursors",
+        "description" : "supports ref cursors",
+        "value" : false
+      }, {
+        "@uuid" : "8bd14f84-6dca-4833-bdd3-abd02a7f2c4c",
+        "name" : "supportsResultSetTypeForTYPE_FORWARD_ONLYResultSets",
+        "description" : "supports result set type for TYPE_FORWARD_ONLY result sets",
+        "value" : true
+      }, {
+        "@uuid" : "37bf9440-9d6c-40f9-b685-5f45583df24d",
+        "name" : "supportsResultSetTypeForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "supports result set type for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : true
+      }, {
+        "@uuid" : "d14b7acd-bb82-4f39-a28d-74f5c59c9b7e",
+        "name" : "supportsResultSetTypeForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "supports result set type for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "a8ad4de9-a749-4a95-b664-91bd18258d1f",
+        "name" : "supportsSavepoints",
+        "description" : "supports savepoints",
+        "value" : true
+      }, {
+        "@uuid" : "6921b291-665d-4c33-8134-55ce34850781",
+        "name" : "supportsSchemasInDataManipulation",
+        "description" : "supports schemas in data manipulation",
+        "value" : false
+      }, {
+        "@uuid" : "749469a2-aa84-47fa-a241-47f8ffb47068",
+        "name" : "supportsSchemasInIndexDefinitions",
+        "description" : "supports schemas in index definitions",
+        "value" : false
+      }, {
+        "@uuid" : "a6580340-6eb2-4f97-827e-5e642d9ea36f",
+        "name" : "supportsSchemasInPrivilegeDefinitions",
+        "description" : "supports schemas in privilege definitions",
+        "value" : false
+      }, {
+        "@uuid" : "44fcc032-548b-4011-925a-c71ac813d869",
+        "name" : "supportsSchemasInProcedureCalls",
+        "description" : "supports schemas in procedure calls",
+        "value" : false
+      }, {
+        "@uuid" : "5d3b1b0c-1798-4e49-a945-d1e3cd1561dc",
+        "name" : "supportsSchemasInTableDefinitions",
+        "description" : "supports schemas in table definitions",
+        "value" : false
+      }, {
+        "@uuid" : "158b8431-9856-4825-b41c-18cbd264d512",
+        "name" : "supportsSelectForUpdate",
+        "description" : "supports select for update",
+        "value" : true
+      }, {
+        "@uuid" : "56e3092a-00ed-43a2-a619-5d648ad29d7b",
+        "name" : "supportsStatementPooling",
+        "description" : "supports statement pooling",
+        "value" : false
+      }, {
+        "@uuid" : "a6fde898-40d5-4bb1-8690-a49298a0e530",
+        "name" : "supportsStoredFunctionsUsingCallSyntax",
+        "description" : "supports stored functions using call syntax",
+        "value" : true
+      }, {
+        "@uuid" : "020e3118-f349-4bd2-a173-b03b74ca6635",
+        "name" : "supportsStoredProcedures",
+        "description" : "supports stored procedures",
+        "value" : true
+      }, {
+        "@uuid" : "ab48379b-e2b2-4cf5-b683-c0c767127f5c",
+        "name" : "supportsSubqueriesInComparisons",
+        "description" : "supports subqueries in comparisons",
+        "value" : true
+      }, {
+        "@uuid" : "24482973-8a9d-4907-a1a4-52ad5843a932",
+        "name" : "supportsSubqueriesInExists",
+        "description" : "supports subqueries in exists",
+        "value" : true
+      }, {
+        "@uuid" : "06d7e2a0-1869-4750-9908-650292572446",
+        "name" : "supportsSubqueriesInIns",
+        "description" : "supports subqueries in ins",
+        "value" : true
+      }, {
+        "@uuid" : "b28a02b9-65d4-4561-ac77-64aa97cf26b0",
+        "name" : "supportsSubqueriesInQuantifieds",
+        "description" : "supports subqueries in quantifieds",
+        "value" : true
+      }, {
+        "@uuid" : "f096894b-5565-4546-a661-7b46b5f7e889",
+        "name" : "supportsTableCorrelationNames",
+        "description" : "supports table correlation names",
+        "value" : true
+      }, {
+        "@uuid" : "4e82bfaf-8aab-4f86-a6f3-4c62c3ae12f7",
+        "name" : "supportsTransactions",
+        "description" : "supports transactions",
+        "value" : true
+      }, {
+        "@uuid" : "faa9be4e-b2b2-46c1-a86d-1295e02dbbe9",
+        "name" : "supportsUnion",
+        "description" : "supports union",
+        "value" : true
+      }, {
+        "@uuid" : "09480ada-b2b7-4fa1-92d5-12cc728d3af8",
+        "name" : "supportsUnionAll",
+        "description" : "supports union all",
+        "value" : true
+      }, {
+        "@uuid" : "603dbf04-a085-431e-afea-305267eeb8af",
+        "name" : "getSystemFunctions",
+        "description" : "system functions",
+        "value" : [ "DATABASE", "USER", "SYSTEM_USER", "SESSION_USER", "PASSWORD", "ENCRYPT", "LAST_INSERT_ID", "VERSION" ]
+      }, {
+        "@uuid" : "8193f146-4f6d-4213-a391-41593da70fdc",
+        "name" : "getTableTypes",
+        "description" : "table types",
+        "value" : [ "LOCAL TEMPORARY", "SYSTEM TABLE", "SYSTEM VIEW", "TABLE", "VIEW" ]
+      }, {
+        "@uuid" : "80d05e2e-fb9c-4520-9ed7-4d306a9b5c6c",
+        "name" : "getTimeDateFunctions",
+        "description" : "time date functions",
+        "value" : [ "DAYOFWEEK", "WEEKDAY", "DAYOFMONTH", "DAYOFYEAR", "MONTH", "DAYNAME", "MONTHNAME", "QUARTER", "WEEK", "YEAR", "HOUR", "MINUTE", "SECOND", "PERIOD_ADD", "PERIOD_DIFF", "TO_DAYS", "FROM_DAYS", "DATE_FORMAT", "TIME_FORMAT", "CURDATE", "CURRENT_DATE", "CURTIME", "CURRENT_TIME", "NOW", "SYSDATE", "CURRENT_TIMESTAMP", "UNIX_TIMESTAMP", "FROM_UNIXTIME", "SEC_TO_TIME", "TIME_TO_SEC" ]
+      }, {
+        "@uuid" : "52a40d8b-61af-460f-a563-5ba6fc636e78",
+        "name" : "getTypeInfo",
+        "description" : "type info",
+        "value" : [ "BIGINT", "BIGINT UNSIGNED", "BINARY", "BIT", "BLOB", "BOOL", "CHAR", "DATE", "DATETIME", "DECIMAL", "DOUBLE", "DOUBLE PRECISION", "ENUM", "FLOAT", "INT", "INT UNSIGNED", "INTEGER", "INTEGER UNSIGNED", "LONG VARBINARY", "LONG VARCHAR", "LONGBLOB", "LONGTEXT", "MEDIUMBLOB", "MEDIUMINT", "MEDIUMINT UNSIGNED", "MEDIUMTEXT", "NUMERIC", "REAL", "SET", "SMALLINT", "SMALLINT UNSIGNED", "TEXT", "TIME", "TIMESTAMP", "TINYBLOB", "TINYINT", "TINYINT UNSIGNED", "TINYTEXT", "VARBINARY", "VARCHAR", "YEAR" ]
+      }, {
+        "@uuid" : "5dca1419-b334-432b-8531-486a4907cb37",
+        "name" : "updatesAreDetectedForTYPE_FORWARD_ONLYResultSets",
+        "description" : "updates are detected for TYPE_FORWARD_ONLY result sets",
+        "value" : false
+      }, {
+        "@uuid" : "a91c7faa-b7eb-4a4f-ba22-f2f18607f542",
+        "name" : "updatesAreDetectedForTYPE_SCROLL_INSENSITIVEResultSets",
+        "description" : "updates are detected for TYPE_SCROLL_INSENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "907f97da-a1cb-4d84-afa0-5adde31831c4",
+        "name" : "updatesAreDetectedForTYPE_SCROLL_SENSITIVEResultSets",
+        "description" : "updates are detected for TYPE_SCROLL_SENSITIVE result sets",
+        "value" : false
+      }, {
+        "@uuid" : "28765cca-f2dd-43e1-99b0-b465ef57a0a9",
+        "name" : "usesLocalFilePerTable",
+        "description" : "uses local file per table",
+        "value" : false
+      }, {
+        "@uuid" : "17a1eae0-f9a8-4aea-a994-eff9eec21a1e",
+        "name" : "usesLocalFiles",
+        "description" : "uses local files",
+        "value" : false
+      } ],
+      "server-info" : [ {
+        "@uuid" : "8663e2a2-bf82-4481-b3ba-b83638b23122",
+        "name" : "database",
+        "description" : "MySQL database name",
+        "value" : "data_type"
+      }, {
+        "@uuid" : "a23ec495-6b99-435e-b5ee-6e72d5605bc4",
+        "name" : "hostname",
+        "description" : "Host name",
+        "value" : "dangsg-ubuntu"
+      }, {
+        "@uuid" : "6cbc26ab-5dc8-4703-a2d7-fb8b23089119",
+        "name" : "server_uuid",
+        "description" : "Server UUID",
+        "value" : "641f38f9-bd12-11ea-a906-645a046402cc"
+      } ],
+      "user-name" : "dangsg@localhost"
+    },
+    "jdbc-driver-info" : {
+      "@uuid" : "2cd2dbec-86a4-44ae-9355-a48e71d73d3d",
+      "connection-url" : "jdbc:mysql://localhost:3306/data_type?nullNamePatternMatchesAll=true&noAccessToProcedureBodies=true&logger=Jdk14Logger&dumpQueriesOnException=true&dumpMetadataOnColumnNotFound=true&maxQuerySizeToLog=4096&&disableMariaDbDriver&useInformationSchema=true&",
+      "driver-class-name" : "com.mysql.cj.jdbc.Driver",
+      "driver-properties" : [ {
+        "@uuid" : "33c86158-2915-40ee-957f-88f8eeb50b9c",
+        "name" : "allowLoadLocalInfile",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver allow use of 'LOAD DATA LOCAL INFILE...'?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "bf85c41b-2f30-44b9-8a4d-45025423670b",
+        "name" : "allowMasterDownConnections",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "By default, a replication-aware connection will fail to connect when configured master hosts are all unavailable at initial connection. Setting this property to 'true' allows to establish the initial connection, by failing over to the slave servers, in read-only state. It won't prevent subsequent failures when switching back to the master hosts i.e. by setting the replication connection to read/write state.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "76ef5134-0ec2-4fb8-b556-5625b03f6e16",
+        "name" : "allowMultiQueries",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Allow the use of ';' to delimit multiple queries during one statement (true/false). Default is 'false', and it does not affect the addBatch() and executeBatch() methods, which rely on rewriteBatchStatements instead.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "17657c5c-38f2-462d-b9cd-f8c425e3aeaa",
+        "name" : "allowNanAndInf",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver allow NaN or +/- INF values in PreparedStatement.setDouble()?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "031556c2-f029-4dc9-bac1-4eaa56b3d490",
+        "name" : "allowPublicKeyRetrieval",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Allows special handshake roundtrip to get server RSA public key directly from server.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "058f6439-ee6e-4793-b323-a68a26b001d5",
+        "name" : "allowSlaveDownConnections",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "By default, a replication-aware connection will fail to connect when configured slave hosts are all unavailable at initial connection. Setting this property to 'true' allows to establish the initial connection. It won't prevent failures when switching to slaves i.e. by setting the replication connection to read-only state. The property 'readFromMasterWhenNoSlaves' should be used for this purpose. ",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "666312c9-263c-4811-a865-b675ed2356cb",
+        "name" : "allowUrlInLocalInfile",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver allow URLs in 'LOAD DATA LOCAL INFILE' statements?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "c2e0cffd-e1fa-49cf-bb4a-fd886fb3cabb",
+        "name" : "alwaysSendSetIsolation",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver always communicate with the database when Connection.setTransactionIsolation() is called? If set to false, the driver will only communicate with the database when the requested transaction isolation is different than the whichever is newer, the last value that was set via Connection.setTransactionIsolation(), or the value that was read from the server when the connection was established. Note that useLocalSessionState=true will force the same behavior as alwaysSendSetIsolation=false, regardless of how alwaysSendSetIsolation is set.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "c9e63f70-6a7a-4bc0-987b-757ff729d13a",
+        "name" : "authenticationPlugins",
+        "choices" : [ ],
+        "description" : "Comma-delimited list of classes that implement com.mysql.cj.protocol.AuthenticationPlugin and which will be used for authentication unless disabled by \"disabledAuthenticationPlugins\" property.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "2231efd2-abdd-4b16-9969-7f0f2da02f75",
+        "name" : "autoClosePStmtStreams",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver automatically call .close() on streams/readers passed as arguments via set*() methods?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "195c0659-7c00-4f72-91a1-b4e5b5a9a96c",
+        "name" : "autoDeserialize",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver automatically detect and de-serialize objects stored in BLOB fields?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "69264929-0dce-47e8-8aa1-8d36b6c719cc",
+        "name" : "autoGenerateTestcaseScript",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver dump the SQL it is executing, including server-side prepared statements to STDERR?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "3f6d1041-9091-4463-a600-0996291315d7",
+        "name" : "autoReconnect",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver try to re-establish stale and/or dead connections? If enabled the driver will throw an exception for a queries issued on a stale or dead connection, which belong to the current transaction, but will attempt reconnect before the next query issued on the connection in a new transaction. The use of this feature is not recommended, because it has side effects related to session state and data consistency when applications don't handle SQLExceptions properly, and is only designed to be used when you are unable to configure your application to handle SQLExceptions resulting from dead and stale connections properly. Alternatively, as a last option, investigate setting the MySQL server variable \"wait_timeout\" to a high value, rather than the default of 8 hours.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "4ff9ab6b-eb31-4c67-83e7-de4ee0e6b8c4",
+        "name" : "autoReconnectForPools",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Use a reconnection strategy appropriate for connection pools (defaults to 'false')",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "18bed124-4d24-4de4-8c20-69489f59c3ec",
+        "name" : "autoSlowLog",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Instead of using slowQueryThreshold* to determine if a query is slow enough to be logged, maintain statistics that allow the driver to determine queries that are outside the 99th percentile?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "97704972-5aaa-45c5-a451-a79703430e90",
+        "name" : "blobsAreStrings",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver always treat BLOBs as Strings - specifically to work around dubious metadata returned by the server for GROUP BY clauses?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "da6a6e03-70ec-4f0a-9958-9314c09a4df3",
+        "name" : "blobSendChunkSize",
+        "choices" : [ ],
+        "description" : "Chunk size to use when sending BLOB/CLOBs via ServerPreparedStatements. Note that this value cannot exceed the value of \"maxAllowedPacket\" and, if that is the case, then this value will be corrected automatically.",
+        "required" : false,
+        "value" : "1048576"
+      }, {
+        "@uuid" : "f12be730-0752-421e-8e77-36f0cf53b7f8",
+        "name" : "cacheCallableStmts",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver cache the parsing stage of CallableStatements",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "2fa04d9d-a566-4005-a51d-956c93108945",
+        "name" : "cacheDefaultTimezone",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Caches clients default time zone. This results in better performance when dealing with time zone conversions in Date and Time data types, however it wont be aware of time zone changes if they happen at runtime.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "f51428d6-3ce9-465c-b26e-154235d7ae66",
+        "name" : "cachePrepStmts",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver cache the parsing stage of PreparedStatements of client-side prepared statements, the \"check\" for suitability of server-side prepared and server-side prepared statements themselves?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "60229d20-3e7c-413e-92f9-09aab40578cf",
+        "name" : "cacheResultSetMetadata",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver cache ResultSetMetaData for Statements and PreparedStatements? (Req. JDK-1.4+, true/false, default 'false')",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "16ad91e6-7add-4a79-995f-47e16c853f20",
+        "name" : "cacheServerConfiguration",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver cache the results of 'SHOW VARIABLES' and 'SHOW COLLATION' on a per-URL basis?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "b0b3fa49-4e33-44e7-bf9c-1dc49ed2789f",
+        "name" : "callableStmtCacheSize",
+        "choices" : [ ],
+        "description" : "If 'cacheCallableStmts' is enabled, how many callable statements should be cached?",
+        "required" : false,
+        "value" : "100"
+      }, {
+        "@uuid" : "52222005-1046-4f2a-ac9c-6db5a47ab76c",
+        "name" : "characterEncoding",
+        "choices" : [ ],
+        "description" : "What character encoding should the driver use when dealing with strings? (defaults is to 'autodetect')",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "dd48d4a9-cd0d-4891-95c9-b3fa1d5da0df",
+        "name" : "characterSetResults",
+        "choices" : [ ],
+        "description" : "Character set to tell the server to return results as.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "f295f01c-326b-443d-88d0-e7690e9cad15",
+        "name" : "clientCertificateKeyStorePassword",
+        "choices" : [ ],
+        "description" : "Password for the client certificates KeyStore",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "63f08382-c21e-43cd-8472-4627ccf909e3",
+        "name" : "clientCertificateKeyStoreType",
+        "choices" : [ ],
+        "description" : "KeyStore type for client certificates (NULL or empty means use the default, which is \"JKS\". Standard keystore types supported by the JVM are \"JKS\" and \"PKCS12\", your environment may have more available depending on what security products are installed and available to the JVM.",
+        "required" : false,
+        "value" : "JKS"
+      }, {
+        "@uuid" : "942dfb45-fc04-432f-b290-11c98407e18d",
+        "name" : "clientCertificateKeyStoreUrl",
+        "choices" : [ ],
+        "description" : "URL to the client certificate KeyStore (if not specified, use defaults)",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "966dbe20-a91b-40ac-af92-acac49aae263",
+        "name" : "clientInfoProvider",
+        "choices" : [ ],
+        "description" : "The name of a class that implements the com.mysql.cj.jdbc.ClientInfoProvider interface in order to support JDBC-4.0's Connection.get/setClientInfo() methods",
+        "required" : false,
+        "value" : "com.mysql.cj.jdbc.CommentClientInfoProvider"
+      }, {
+        "@uuid" : "cad534f9-3fd7-444d-b2e0-40e8671458a1",
+        "name" : "clobberStreamingResults",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "This will cause a 'streaming' ResultSet to be automatically closed, and any outstanding data still streaming from the server to be discarded if another query is executed before all the data has been read from the server.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "5d58fbee-841b-4f07-8a28-5c572a01fb1a",
+        "name" : "clobCharacterEncoding",
+        "choices" : [ ],
+        "description" : "The character encoding to use for sending and retrieving TEXT, MEDIUMTEXT and LONGTEXT values instead of the configured connection characterEncoding",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "bd351a73-7599-42d4-8831-9c58199c86ce",
+        "name" : "compensateOnDuplicateKeyUpdateCounts",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver compensate for the update counts of \"ON DUPLICATE KEY\" INSERT statements (2 = 1, 0 = 1) when using prepared statements?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "919b6ecb-726e-4ffa-87de-21bc61b1ecf9",
+        "name" : "connectionAttributes",
+        "choices" : [ ],
+        "description" : "A comma-delimited list of user-defined key:value pairs (in addition to standard MySQL-defined key:value pairs) to be passed to MySQL Server for display as connection attributes in the PERFORMANCE_SCHEMA.SESSION_CONNECT_ATTRS table. Example usage: connectionAttributes=key1:value1,key2:value2 This functionality is available for use with MySQL Server version 5.6 or later only. Earlier versions of MySQL Server do not support connection attributes, causing this configuration option to be ignored. Setting connectionAttributes=none will cause connection attribute processing to be bypassed, for situations where Connection creation/initialization speed is critical.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "4b7c6f10-d534-4932-b2af-c0d1e7ee2f98",
+        "name" : "connectionCollation",
+        "choices" : [ ],
+        "description" : "If set, tells the server to use this collation in SET NAMES charset COLLATE connectionCollation. Also overrides the characterEncoding with those corresponding to the character set of this collation.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "d580cadf-7007-4bf7-a4f0-654c0a878641",
+        "name" : "connectionLifecycleInterceptors",
+        "choices" : [ ],
+        "description" : "A comma-delimited list of classes that implement \"com.mysql.cj.jdbc.interceptors.ConnectionLifecycleInterceptor\" that should notified of connection lifecycle events (creation, destruction, commit, rollback, setting the current database and changing the autocommit mode) and potentially alter the execution of these commands. ConnectionLifecycleInterceptors are \"stackable\", more than one interceptor may be specified via the configuration property as a comma-delimited list, with the interceptors executed in order from left to right.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "d60fed6d-8155-4dfd-8abc-d03d749cc45a",
+        "name" : "connectTimeout",
+        "choices" : [ ],
+        "description" : "Timeout for socket connect (in milliseconds), with 0 being no timeout. Only works on JDK-1.4 or newer. Defaults to '0'.",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "d676afa4-94fd-4a78-ad0b-3350015b9f9c",
+        "name" : "continueBatchOnError",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver continue processing batch commands if one statement fails. The JDBC spec allows either way (defaults to 'true').",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "984e22c9-0a41-44a2-a71b-24996412a562",
+        "name" : "createDatabaseIfNotExist",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Creates the database given in the URL if it doesn't yet exist. Assumes the configured user has permissions to create databases.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "afa5a79d-343a-4216-a52b-391ef83a53f6",
+        "name" : "databaseTerm",
+        "choices" : [ "CATALOG", "SCHEMA" ],
+        "description" : "MySQL uses the term \"schema\" as a synonym of the term \"database,\" while Connector/J historically takes the JDBC term \"catalog\" as synonymous to \"database\". This property sets for Connector/J which of the JDBC terms \"catalog\" and \"schema\" is used in an application to refer to a database. The property takes one of the two values CATALOG or SCHEMA and uses it to determine (1) which Connection methods can be used to set/get the current database (e.g. setCatalog() or setSchema()?), (2) which arguments can be used within the various DatabaseMetaData methods to filter results (e.g. the catalog or schemaPattern argument of getColumns()?), and (3) which fields in the ResultSet returned by DatabaseMetaData methods contain the database identification information (i.e., the TABLE_CAT or TABLE_SCHEM field in the ResultSet returned by getTables()?).[CR]If databaseTerm=CATALOG, schemaPattern for searches are ignored and calls of schema methods (like setSchema() or get Schema()) become no-ops, and vice versa.",
+        "required" : false,
+        "value" : "CATALOG"
+      }, {
+        "@uuid" : "6308d634-b49d-43a2-a34e-691d551f46f8",
+        "name" : "dbname",
+        "choices" : [ ],
+        "description" : "Database name;",
+        "required" : false,
+        "value" : "data_type"
+      }, {
+        "@uuid" : "d5128bdc-29ed-4fc4-8f3d-8b5e09ae78e7",
+        "name" : "defaultAuthenticationPlugin",
+        "choices" : [ ],
+        "description" : "Name of a class implementing com.mysql.cj.protocol.AuthenticationPlugin which will be used as the default authentication plugin (see below). It is an error to use a class which is not listed in \"authenticationPlugins\" nor it is one of the built-in plugins. It is an error to set as default a plugin which was disabled with \"disabledAuthenticationPlugins\" property. It is an error to set this value to null or the empty string (i.e. there must be at least a valid default authentication plugin specified for the connection, meeting all constraints listed above).",
+        "required" : false,
+        "value" : "com.mysql.cj.protocol.a.authentication.MysqlNativePasswordPlugin"
+      }, {
+        "@uuid" : "a97e72fa-79b4-463e-81fb-a892ffaf8062",
+        "name" : "defaultFetchSize",
+        "choices" : [ ],
+        "description" : "The driver will call setFetchSize(n) with this value on all newly-created Statements",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "f547ad56-5db8-4985-8f74-50ec62e4e1e8",
+        "name" : "detectCustomCollations",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver detect custom charsets/collations installed on server (true/false, defaults to 'false'). If this option set to 'true' driver gets actual charsets/collations from server each time connection establishes. This could slow down connection initialization significantly.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "d90001dd-33ee-4aa4-ac30-f85db914b21c",
+        "name" : "disabledAuthenticationPlugins",
+        "choices" : [ ],
+        "description" : "Comma-delimited list of classes implementing com.mysql.cj.protocol.AuthenticationPlugin or mechanisms, i.e. \"mysql_native_password\". The authentication plugins or mechanisms listed will not be used for authentication which will fail if it requires one of them. It is an error to disable the default authentication plugin (either the one named by \"defaultAuthenticationPlugin\" property or the hard-coded one if \"defaultAuthenticationPlugin\" property is not set).",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "e54a9d52-f865-4a21-bf55-32a9914b6fa8",
+        "name" : "disconnectOnExpiredPasswords",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If \"disconnectOnExpiredPasswords\" is set to \"false\" and password is expired then server enters \"sandbox\" mode and sends ERR(08001, ER_MUST_CHANGE_PASSWORD) for all commands that are not needed to set a new password until a new password is set.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "c91407c3-9445-4d67-ab60-a5ae300bf0bf",
+        "name" : "dnsSrv",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver use the given host name to lookup for DNS SRV records and use the resulting list of hosts in a multi-host failover connection? Note that a single host name and no port must be provided when this option is enabled.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "73d0c13f-7218-46ff-a998-fa39a66a2bee",
+        "name" : "dontCheckOnDuplicateKeyUpdateInSQL",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Stops checking if every INSERT statement contains the \"ON DUPLICATE KEY UPDATE\" clause. As a side effect, obtaining the statement's generated keys information will return a list where normally it wouldn't. Also be aware that, in this case, the list of generated keys returned may not be accurate. The effect of this property is canceled if set simultaneously with 'rewriteBatchedStatements=true'.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "af5f06e5-ef12-4702-a50c-b180b11c33ec",
+        "name" : "dontTrackOpenResources",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "The JDBC specification requires the driver to automatically track and close resources, however if your application doesn't do a good job of explicitly calling close() on statements or result sets, this can cause memory leakage. Setting this property to true relaxes this constraint, and can be more memory efficient for some applications. Also the automatic closing of the Statement and current ResultSet in Statement.closeOnCompletion() and Statement.getMoreResults ([Statement.CLOSE_CURRENT_RESULT | Statement.CLOSE_ALL_RESULTS]), respectively, ceases to happen. This property automatically sets holdResultsOpenOverStatementClose=true.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "f9cdd0de-d205-497d-8cd3-b65e07d4614c",
+        "name" : "dumpQueriesOnException",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver dump the contents of the query sent to the server in the message for SQLExceptions?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "5575f7cd-88bd-4e5e-a29f-36a54837187e",
+        "name" : "elideSetAutoCommits",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If using MySQL-4.1 or newer, should the driver only issue 'set autocommit=n' queries when the server's state doesn't match the requested state by Connection.setAutoCommit(boolean)?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "ef7d56e6-d799-460f-8bab-43f5b90759d4",
+        "name" : "emptyStringsConvertToZero",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver allow conversions from empty string fields to numeric values of '0'?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "03edf9b3-f216-4e61-b305-fa1037baf551",
+        "name" : "emulateLocators",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver emulate java.sql.Blobs with locators? With this feature enabled, the driver will delay loading the actual Blob data until the one of the retrieval methods (getInputStream(), getBytes(), and so forth) on the blob data stream has been accessed. For this to work, you must use a column alias with the value of the column to the actual name of the Blob. The feature also has the following restrictions: The SELECT that created the result set must reference only one table, the table must have a primary key; the SELECT must alias the original blob column name, specified as a string, to an alternate name; the SELECT must cover all columns that make up the primary key. ",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "2a1b82a3-87be-483a-8bda-494eccae114d",
+        "name" : "emulateUnsupportedPstmts",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver detect prepared statements that are not supported by the server, and replace them with client-side emulated versions?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "39e7feae-b3be-4a7d-9790-b10d9ef91a41",
+        "name" : "enabledSSLCipherSuites",
+        "choices" : [ ],
+        "description" : "If \"useSSL\" is set to \"true\", overrides the cipher suites enabled for use on the underlying SSL sockets. This may be required when using external JSSE providers or to specify cipher suites compatible with both MySQL server and used JVM.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "e4e870aa-0a26-41d3-a2b2-d7da1ee3201f",
+        "name" : "enabledTLSProtocols",
+        "choices" : [ ],
+        "description" : "If \"useSSL\" is set to \"true\", overrides the TLS protocols enabled for use on the underlying SSL sockets. This may be used to restrict connections to specific TLS versions.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "2d26a23d-e2bd-4e00-b641-5e1dbf8e11e3",
+        "name" : "enableEscapeProcessing",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Sets the default escape processing behavior for Statement objects. The method Statement.setEscapeProcessing() can be used to specify the escape processing behavior for an individual Statement object. Default escape processing behavior in prepared statements must be defined with the property 'processEscapeCodesForPrepStmts'.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "9ffc2768-4231-4fe0-84c9-8ccc535d5c8d",
+        "name" : "enablePacketDebug",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "When enabled, a ring-buffer of 'packetDebugBufferSize' packets will be kept, and dumped when exceptions are thrown in key areas in the driver's code",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "b26337a5-d5b3-4cff-87e0-b6e29f544531",
+        "name" : "enableQueryTimeouts",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "When enabled, query timeouts set via Statement.setQueryTimeout() use a shared java.util.Timer instance for scheduling. Even if the timeout doesn't expire before the query is processed, there will be memory used by the TimerTask for the given timeout which won't be reclaimed until the time the timeout would have expired if it hadn't been cancelled by the driver. High-load environments might want to consider disabling this functionality.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "9995777f-4f0f-4950-85a0-c5270facfd0b",
+        "name" : "exceptionInterceptors",
+        "choices" : [ ],
+        "description" : "Comma-delimited list of classes that implement com.mysql.cj.exceptions.ExceptionInterceptor. These classes will be instantiated one per Connection instance, and all SQLExceptions thrown by the driver will be allowed to be intercepted by these interceptors, in a chained fashion, with the first class listed as the head of the chain.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "c044506b-084c-4d24-b6df-e9d108214483",
+        "name" : "explainSlowQueries",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If 'logSlowQueries' is enabled, should the driver automatically issue an 'EXPLAIN' on the server and send the results to the configured logger at a WARN level?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "084aecc5-3fa2-49b3-958b-6311211f32bd",
+        "name" : "failOverReadOnly",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "When failing over in autoReconnect mode, should the connection be set to 'read-only'?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "e74c85a8-aac8-4f41-908b-16ad0cabf300",
+        "name" : "functionsNeverReturnBlobs",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver always treat data from functions returning BLOBs as Strings - specifically to work around dubious metadata returned by the server for GROUP BY clauses?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "3873e03e-c623-44bf-ada5-e18c52196be5",
+        "name" : "gatherPerfMetrics",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver gather performance metrics, and report them via the configured logger every 'reportMetricsIntervalMillis' milliseconds?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "3aefe884-9eb1-4beb-a4e7-80c979157e46",
+        "name" : "generateSimpleParameterMetadata",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver generate simplified parameter metadata for PreparedStatements when no metadata is available either because the server couldn't support preparing the statement, or server-side prepared statements are disabled?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "63148d6d-82ba-4863-a06c-38d61508b837",
+        "name" : "getProceduresReturnsFunctions",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Pre-JDBC4 DatabaseMetaData API has only the getProcedures() and getProcedureColumns() methods, so they return metadata info for both stored procedures and functions. JDBC4 was extended with the getFunctions() and getFunctionColumns() methods and the expected behaviours of previous methods are not well defined. For JDBC4 and higher, default 'true' value of the option means that calls of DatabaseMetaData.getProcedures() and DatabaseMetaData.getProcedureColumns() return metadata for both procedures and functions as before, keeping backward compatibility. Setting this property to 'false' decouples Connector/J from its pre-JDBC4 behaviours for DatabaseMetaData.getProcedures() and DatabaseMetaData.getProcedureColumns(), forcing them to return metadata for procedures only.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "688193fd-db41-435a-884e-783de5d69afa",
+        "name" : "ha.enableJMX",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Enables JMX-based management of load-balanced connection groups, including live addition/removal of hosts from load-balancing pool. Enables JMX-based management of replication connection groups, including live slave promotion, addition of new slaves and removal of master or slave hosts from load-balanced master and slave connection pools.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "41a8e29b-0857-445a-9bad-a980bf08beb9",
+        "name" : "ha.loadBalanceStrategy",
+        "choices" : [ ],
+        "description" : "If using a load-balanced connection to connect to SQL nodes in a MySQL Cluster/NDB configuration (by using the URL prefix \"jdbc:mysql:loadbalance://\"), which load balancing algorithm should the driver use: (1) \"random\" - the driver will pick a random host for each request. This tends to work better than round-robin, as the randomness will somewhat account for spreading loads where requests vary in response time, while round-robin can sometimes lead to overloaded nodes if there are variations in response times across the workload. (2) \"bestResponseTime\" - the driver will route the request to the host that had the best response time for the previous transaction. (3) \"serverAffinity\" - the driver initially attempts to enforce server affinity while still respecting and benefiting from the fault tolerance aspects of the load-balancing implementation. The server affinity ordered list is provided using the property 'serverAffinityOrder'. If none of the servers listed in the affinity list is responsive, the driver then refers to the \"random\" strategy to proceed with choosing the next server.",
+        "required" : false,
+        "value" : "random"
+      }, {
+        "@uuid" : "6b6e8f04-970b-4b70-a03b-b002627c083c",
+        "name" : "holdResultsOpenOverStatementClose",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver close result sets on Statement.close() as required by the JDBC specification?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "72094f6b-fc6d-49ef-b513-3109cbff5e6a",
+        "name" : "host",
+        "choices" : [ ],
+        "description" : "Hostname of MySQL Server",
+        "required" : true,
+        "value" : "localhost"
+      }, {
+        "@uuid" : "2245dee7-f0e5-4c8f-a1fb-ff315a97e662",
+        "name" : "ignoreNonTxTables",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Ignore non-transactional table warning for rollback? (defaults to 'false').",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "b75c29d2-1990-4a16-afb7-89e7be44eb67",
+        "name" : "includeInnodbStatusInDeadlockExceptions",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Include the output of \"SHOW ENGINE INNODB STATUS\" in exception messages when deadlock exceptions are detected?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "279cc6b4-a30d-4b99-ae92-bbec1c637182",
+        "name" : "includeThreadDumpInDeadlockExceptions",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Include a current Java thread dump in exception messages when deadlock exceptions are detected?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "db7fde59-b7bd-43ea-a892-5262f94f6626",
+        "name" : "includeThreadNamesAsStatementComment",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Include the name of the current thread as a comment visible in \"SHOW PROCESSLIST\", or in Innodb deadlock dumps, useful in correlation with \"includeInnodbStatusInDeadlockExceptions=true\" and \"includeThreadDumpInDeadlockExceptions=true\". ",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "83552abf-fefc-4268-8b10-54883d88c020",
+        "name" : "initialTimeout",
+        "choices" : [ ],
+        "description" : "If autoReconnect is enabled, the initial time to wait between re-connect attempts (in seconds, defaults to '2').",
+        "required" : false,
+        "value" : "2"
+      }, {
+        "@uuid" : "bce46424-8db9-4476-a555-2bd0538623c7",
+        "name" : "interactiveClient",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Set the CLIENT_INTERACTIVE flag, which tells MySQL to timeout connections based on INTERACTIVE_TIMEOUT instead of WAIT_TIMEOUT",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "382dfdf1-8d35-4c26-b7d5-fe5886646e70",
+        "name" : "jdbcCompliantTruncation",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver throw java.sql.DataTruncation exceptions when data is truncated as is required by the JDBC specification when connected to a server that supports warnings (MySQL 4.1.0 and newer)? This property has no effect if the server sql-mode includes STRICT_TRANS_TABLES.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "d8f532d1-d535-43f2-a072-084d10cb4633",
+        "name" : "largeRowSizeThreshold",
+        "choices" : [ ],
+        "description" : "What size result set row should the JDBC driver consider \"large\", and thus use a more memory-efficient way of representing the row internally?",
+        "required" : false,
+        "value" : "2048"
+      }, {
+        "@uuid" : "2673ad62-4d3b-4037-8059-e42563365699",
+        "name" : "loadBalanceAutoCommitStatementRegex",
+        "choices" : [ ],
+        "description" : "When load-balancing is enabled for auto-commit statements (via loadBalanceAutoCommitStatementThreshold), the statement counter will only increment when the SQL matches the regular expression. By default, every statement issued matches.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "75fd2a82-eeb7-432e-b87a-2a121b1ca86d",
+        "name" : "loadBalanceAutoCommitStatementThreshold",
+        "choices" : [ ],
+        "description" : "When auto-commit is enabled, the number of statements which should be executed before triggering load-balancing to rebalance. Default value of 0 causes load-balanced connections to only rebalance when exceptions are encountered, or auto-commit is disabled and transactions are explicitly committed or rolled back.",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "8c6c1397-40e0-4337-bc18-dce355c15b5f",
+        "name" : "loadBalanceBlacklistTimeout",
+        "choices" : [ ],
+        "description" : "Time in milliseconds between checks of servers which are unavailable, by controlling how long a server lives in the global blacklist.",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "940d19b9-ae7a-473d-bccc-95a89d71d861",
+        "name" : "loadBalanceConnectionGroup",
+        "choices" : [ ],
+        "description" : "Logical group of load-balanced connections within a classloader, used to manage different groups independently. If not specified, live management of load-balanced connections is disabled.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "d5ad820b-bd98-48f5-a620-c5caed227d48",
+        "name" : "loadBalanceExceptionChecker",
+        "choices" : [ ],
+        "description" : "Fully-qualified class name of custom exception checker. The class must implement com.mysql.cj.jdbc.ha.LoadBalanceExceptionChecker interface, and is used to inspect SQLExceptions and determine whether they should trigger fail-over to another host in a load-balanced deployment.",
+        "required" : false,
+        "value" : "com.mysql.cj.jdbc.ha.StandardLoadBalanceExceptionChecker"
+      }, {
+        "@uuid" : "31251e82-c0ec-4aa3-b8c5-97e3037f2036",
+        "name" : "loadBalanceHostRemovalGracePeriod",
+        "choices" : [ ],
+        "description" : "Sets the grace period to wait for a host being removed from a load-balanced connection, to be released when it is currently the active host.",
+        "required" : false,
+        "value" : "15000"
+      }, {
+        "@uuid" : "f4ff94a5-1577-4694-bae1-17f3ae7d1970",
+        "name" : "loadBalancePingTimeout",
+        "choices" : [ ],
+        "description" : "Time in milliseconds to wait for ping response from each of load-balanced physical connections when using load-balanced Connection.",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "364e32b8-a362-4252-a0e0-05c2bf59f707",
+        "name" : "loadBalanceSQLExceptionSubclassFailover",
+        "choices" : [ ],
+        "description" : "Comma-delimited list of classes/interfaces used by default load-balanced exception checker to determine whether a given SQLException should trigger failover. The comparison is done using Class.isInstance(SQLException) using the thrown SQLException.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "60c96b46-3911-4f69-8946-2c12aa8002bf",
+        "name" : "loadBalanceSQLStateFailover",
+        "choices" : [ ],
+        "description" : "Comma-delimited list of SQLState codes used by default load-balanced exception checker to determine whether a given SQLException should trigger failover. The SQLState of a given SQLException is evaluated to determine whether it begins with any value in the comma-delimited list.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "3ce2db71-0f82-4ce8-8d5b-97f84296d38e",
+        "name" : "loadBalanceValidateConnectionOnSwapServer",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the load-balanced Connection explicitly check whether the connection is live when swapping to a new physical connection at commit/rollback?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "69340a0a-a61f-4e37-9af7-700b0d22745c",
+        "name" : "localSocketAddress",
+        "choices" : [ ],
+        "description" : "Hostname or IP address given to explicitly configure the interface that the driver will bind the client side of the TCP/IP connection to when connecting.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "4dc94dbf-623b-4780-97de-bab4a81ba8c2",
+        "name" : "locatorFetchBufferSize",
+        "choices" : [ ],
+        "description" : "If 'emulateLocators' is configured to 'true', what size buffer should be used when fetching BLOB data for getBinaryInputStream?",
+        "required" : false,
+        "value" : "1048576"
+      }, {
+        "@uuid" : "16192dff-fe07-4d80-b66c-57ae45e6c3a8",
+        "name" : "logger",
+        "choices" : [ ],
+        "description" : "The name of a class that implements \"com.mysql.cj.log.Log\" that will be used to log messages to. (default is \"com.mysql.cj.log.StandardLogger\", which logs to STDERR)",
+        "required" : false,
+        "value" : "Jdk14Logger"
+      }, {
+        "@uuid" : "3cda1115-8742-468c-867c-770d9bfbc0a5",
+        "name" : "logSlowQueries",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should queries that take longer than 'slowQueryThresholdMillis' or detected by the 'autoSlowLog' monitoring be reported to the registered 'profilerEventHandler'?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "e122a3e1-e7f5-4620-8887-3cd847463180",
+        "name" : "logXaCommands",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver log XA commands sent by MysqlXaConnection to the server, at the DEBUG level of logging?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "4f9b20e8-910c-46f4-ba81-87d446bb419d",
+        "name" : "maintainTimeStats",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver maintain various internal timers to enable idle time calculations as well as more verbose error messages when the connection to the server fails? Setting this property to false removes at least two calls to System.getCurrentTimeMillis() per query.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "ff8820ae-47fc-4ae1-8a26-c66d91287b5d",
+        "name" : "maxAllowedPacket",
+        "choices" : [ ],
+        "description" : "Maximum allowed packet size to send to server. If not set, the value of system variable 'max_allowed_packet' will be used to initialize this upon connecting. This value will not take effect if set larger than the value of 'max_allowed_packet'. Also, due to an internal dependency with the property \"blobSendChunkSize\", this setting has a minimum value of \"8203\" if \"useServerPrepStmts\" is set to \"true\".",
+        "required" : false,
+        "value" : "65535"
+      }, {
+        "@uuid" : "b7b2c528-c564-44db-b545-ef729a78611f",
+        "name" : "maxQuerySizeToLog",
+        "choices" : [ ],
+        "description" : "Controls the maximum length of the part of a query that will get logged when profiling or tracing",
+        "required" : false,
+        "value" : "4096"
+      }, {
+        "@uuid" : "8b031598-aec4-4921-a8d8-58e599ba9c1b",
+        "name" : "maxReconnects",
+        "choices" : [ ],
+        "description" : "Maximum number of reconnects to attempt if autoReconnect is true, default is '3'.",
+        "required" : false,
+        "value" : "3"
+      }, {
+        "@uuid" : "53859bb0-6f3f-4e03-9989-0a9e069cded0",
+        "name" : "maxRows",
+        "choices" : [ ],
+        "description" : "The maximum number of rows to return (0, the default means return all rows).",
+        "required" : false,
+        "value" : "-1"
+      }, {
+        "@uuid" : "97f6c4ef-086c-4b2b-b352-3917d78ee98c",
+        "name" : "metadataCacheSize",
+        "choices" : [ ],
+        "description" : "The number of queries to cache ResultSetMetadata for if cacheResultSetMetaData is set to 'true' (default 50)",
+        "required" : false,
+        "value" : "50"
+      }, {
+        "@uuid" : "2dbdf184-677b-491c-941a-b33c8835084d",
+        "name" : "netTimeoutForStreamingResults",
+        "choices" : [ ],
+        "description" : "What value should the driver automatically set the server setting 'net_write_timeout' to when the streaming result sets feature is in use? (value has unit of seconds, the value '0' means the driver will not try and adjust this value)",
+        "required" : false,
+        "value" : "600"
+      }, {
+        "@uuid" : "6614f6f3-b516-48e9-9f13-2353b1c0c4c3",
+        "name" : "noAccessToProcedureBodies",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "When determining procedure parameter types for CallableStatements, and the connected user can't access procedure bodies through \"SHOW CREATE PROCEDURE\" or select on mysql.proc should the driver instead create basic metadata (all parameters reported as INOUT VARCHARs) instead of throwing an exception?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "9ee872e5-8cd5-477a-bb06-2944571af410",
+        "name" : "noDatetimeStringSync",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Don't ensure that ResultSet.getDatetimeType().toString().equals(ResultSet.getString())",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "c80ec169-1934-40fe-b521-51fa8d79a813",
+        "name" : "nullDatabaseMeansCurrent",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "When DatabaseMetadata methods ask for a 'catalog' or 'schema' parameter, does the value null mean use the current database? See also property 'databaseTerm'.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "5675d820-7acf-4c87-84d8-531f6236e341",
+        "name" : "overrideSupportsIntegrityEnhancementFacility",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver return \"true\" for DatabaseMetaData.supportsIntegrityEnhancementFacility() even if the database doesn't support it to workaround applications that require this method to return \"true\" to signal support of foreign keys, even though the SQL specification states that this facility contains much more than just foreign key support (one such application being OpenOffice)?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "48977c3b-43c4-414c-919d-5d78ed0c7591",
+        "name" : "packetDebugBufferSize",
+        "choices" : [ ],
+        "description" : "The maximum number of packets to retain when 'enablePacketDebug' is true",
+        "required" : false,
+        "value" : "20"
+      }, {
+        "@uuid" : "4586049c-1ec9-4527-8ac0-21642a6a6e5c",
+        "name" : "padCharsWithSpace",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If a result set column has the CHAR type and the value does not fill the amount of characters specified in the DDL for the column, should the driver pad the remaining characters with space (for ANSI compliance)?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "12a51c57-cb58-4b6d-b0e9-a17fc3303eed",
+        "name" : "paranoid",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Take measures to prevent exposure sensitive information in error messages and clear data structures holding sensitive data when possible? (defaults to 'false')",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "055b76e5-c762-4277-8461-5925eae5ac29",
+        "name" : "parseInfoCacheFactory",
+        "choices" : [ ],
+        "description" : "Name of a class implementing com.mysql.cj.CacheAdapterFactory, which will be used to create caches for the parsed representation of client-side prepared statements.",
+        "required" : false,
+        "value" : "com.mysql.cj.PerConnectionLRUFactory"
+      }, {
+        "@uuid" : "9c4f1089-121a-49aa-8416-d25ab6c187ab",
+        "name" : "password",
+        "choices" : [ ],
+        "description" : "Password to use for authentication",
+        "required" : true,
+        "value" : ""
+      }, {
+        "@uuid" : "d14ab03f-e4bd-40bb-8f5e-c157714a6b91",
+        "name" : "password",
+        "choices" : [ ],
+        "description" : "The password to use when connecting",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "bb6f1747-3347-4ef8-9826-96246d29ad6b",
+        "name" : "passwordCharacterEncoding",
+        "choices" : [ ],
+        "description" : "What character encoding is used for passwords? Leaving this set to the default value (null), uses the value set in \"characterEncoding\" if there is one, otherwise uses UTF-8 as default encoding. If the password contains non-ASCII characters, the password encoding must match what server encoding was set to when the password was created. For passwords in other character encodings, the encoding will have to be specified with this property (or with \"characterEncoding\"), as it's not possible for the driver to auto-detect this.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "35a7f6fd-2840-4c58-8f67-c01678747629",
+        "name" : "pedantic",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Follow the JDBC spec to the letter.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "84b52b29-93bf-46ea-ab21-59e7db7ff01f",
+        "name" : "pinGlobalTxToPhysicalConnection",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "When using XAConnections, should the driver ensure that operations on a given XID are always routed to the same physical connection? This allows the XAConnection to support \"XA START ... JOIN\" after \"XA END\" has been called",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "ea817b5f-e8e1-49a2-8e51-29ae310dd9b4",
+        "name" : "populateInsertRowWithDefaultValues",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "When using ResultSets that are CONCUR_UPDATABLE, should the driver pre-populate the \"insert\" row with default values from the DDL for the table used in the query so those values are immediately available for ResultSet accessors? This functionality requires a call to the database for metadata each time a result set of this type is created. If disabled (the default), the default values will be populated by the an internal call to refreshRow() which pulls back default values and/or values changed by triggers.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "ef3f81ea-324a-45c7-b696-9dd32ed4d45c",
+        "name" : "port",
+        "choices" : [ ],
+        "description" : "Port number of MySQL Server",
+        "required" : false,
+        "value" : "3306"
+      }, {
+        "@uuid" : "413e3b82-e7cd-471c-8e86-a275c01d297a",
+        "name" : "prepStmtCacheSize",
+        "choices" : [ ],
+        "description" : "If prepared statement caching is enabled, how many prepared statements should be cached?",
+        "required" : false,
+        "value" : "25"
+      }, {
+        "@uuid" : "ea174b25-4f9c-4014-9b1d-9e7e91af05d4",
+        "name" : "prepStmtCacheSqlLimit",
+        "choices" : [ ],
+        "description" : "If prepared statement caching is enabled, what's the largest SQL the driver will cache the parsing for?",
+        "required" : false,
+        "value" : "256"
+      }, {
+        "@uuid" : "c5a2a08c-b0bc-4382-a5ca-6089600a740d",
+        "name" : "processEscapeCodesForPrepStmts",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver process escape codes in queries that are prepared? Default escape processing behavior in non-prepared statements must be defined with the property 'enableEscapeProcessing'.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "b1b02c38-44ac-4065-a913-883f67c882e5",
+        "name" : "profilerEventHandler",
+        "choices" : [ ],
+        "description" : "Name of a class that implements the interface com.mysql.cj.log.ProfilerEventHandler that will be used to handle profiling/tracing events.",
+        "required" : false,
+        "value" : "com.mysql.cj.log.LoggingProfilerEventHandler"
+      }, {
+        "@uuid" : "b62d8a98-fa55-4fb3-9c6c-391f6b1971bd",
+        "name" : "profileSQL",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Trace queries and their execution/fetch times to the configured 'profilerEventHandler'",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "0ff5ca1d-d2ab-4ffc-9996-36199d04fb86",
+        "name" : "propertiesTransform",
+        "choices" : [ ],
+        "description" : "An implementation of com.mysql.cj.conf.ConnectionPropertiesTransform that the driver will use to modify URL properties passed to the driver before attempting a connection",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "cf5df5bc-f1c5-4c23-bcb5-e0c6f034af8b",
+        "name" : "queriesBeforeRetryMaster",
+        "choices" : [ ],
+        "description" : "Number of queries to issue before falling back to the primary host when failed over (when using multi-host failover). Whichever condition is met first, 'queriesBeforeRetryMaster' or 'secondsBeforeRetryMaster' will cause an attempt to be made to reconnect to the primary host. Setting both properties to 0 disables the automatic fall back to the primary host at transaction boundaries. Defaults to 50.",
+        "required" : false,
+        "value" : "50"
+      }, {
+        "@uuid" : "4a00f41c-6b02-4dda-93dd-b81066c5d3fc",
+        "name" : "queryInterceptors",
+        "choices" : [ ],
+        "description" : "A comma-delimited list of classes that implement \"com.mysql.cj.interceptors.QueryInterceptor\" that should be placed \"in between\" query execution to influence the results. QueryInterceptors are \"chainable\", the results returned by the \"current\" interceptor will be passed on to the next in in the chain, from left-to-right order, as specified in this property. ",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "7d693a76-0359-49f1-9423-3e93b77c66ee",
+        "name" : "queryTimeoutKillsConnection",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If the timeout given in Statement.setQueryTimeout() expires, should the driver forcibly abort the Connection instead of attempting to abort the query?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "bbc469e1-e16a-4a4b-bcf8-2ebe5847519e",
+        "name" : "readFromMasterWhenNoSlaves",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Replication-aware connections distribute load by using the master hosts when in read/write state and by using the slave hosts when in read-only state. If, when setting the connection to read-only state, none of the slave hosts are available, an SQLExeception is thrown back. Setting this property to 'true' allows to fail over to the master hosts, while setting the connection state to read-only, when no slave hosts are available at switch instant.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "857f36b2-ddf0-4036-bbca-c89110b3f26b",
+        "name" : "readOnlyPropagatesToServer",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver issue appropriate statements to implicitly set the transaction access mode on server side when Connection.setReadOnly() is called? Setting this property to 'true' enables InnoDB read-only potential optimizations but also requires an extra roundtrip to set the right transaction state. Even if this property is set to 'false', the driver will do its best effort to prevent the execution of database-state-changing queries. Requires minimum of MySQL 5.6.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "4ea8c06d-6caf-4fe0-a602-ab25d0012921",
+        "name" : "reconnectAtTxEnd",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If autoReconnect is set to true, should the driver attempt reconnections at the end of every transaction?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "2d25ca63-674f-4b53-bc31-71c741f9b82e",
+        "name" : "replicationConnectionGroup",
+        "choices" : [ ],
+        "description" : "Logical group of replication connections within a classloader, used to manage different groups independently. If not specified, live management of replication connections is disabled.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "1274e467-93c1-44a9-bbf4-b37920e8d669",
+        "name" : "reportMetricsIntervalMillis",
+        "choices" : [ ],
+        "description" : "If 'gatherPerfMetrics' is enabled, how often should they be logged (in ms)?",
+        "required" : false,
+        "value" : "30000"
+      }, {
+        "@uuid" : "88fb3226-e2b2-467c-b266-303204fabfd3",
+        "name" : "requireSSL",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "For 8.0.12 and earlier: Require server support of SSL connection if useSSL=true? (defaults to 'false').[CR] For 8.0.13 and later: DEPRECATED. See sslMode property description for details.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "f4eef9f3-c5b7-4a26-9aa9-067be46c6dd5",
+        "name" : "resourceId",
+        "choices" : [ ],
+        "description" : "A globally unique name that identifies the resource that this datasource or connection is connected to, used for XAResource.isSameRM() when the driver can't determine this value based on hostnames used in the URL",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "2f63a694-67b8-4927-b128-4da1f90bd94f",
+        "name" : "resultSetSizeThreshold",
+        "choices" : [ ],
+        "description" : "If 'useUsageAdvisor' is true, how many rows should a result set contain before the driver warns that it is suspiciously large?",
+        "required" : false,
+        "value" : "100"
+      }, {
+        "@uuid" : "db50f626-b6f0-45b6-9e7b-f4edfd6908c4",
+        "name" : "retriesAllDown",
+        "choices" : [ ],
+        "description" : "When using loadbalancing or failover, the number of times the driver should cycle through available hosts, attempting to connect. Between cycles, the driver will pause for 250ms if no servers are available.",
+        "required" : false,
+        "value" : "120"
+      }, {
+        "@uuid" : "f36a2eaa-8e56-4aef-8155-89dcc4a86989",
+        "name" : "rewriteBatchedStatements",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver use multiqueries (irregardless of the setting of \"allowMultiQueries\") as well as rewriting of prepared statements for INSERT into multi-value inserts when executeBatch() is called? Notice that this has the potential for SQL injection if using plain java.sql.Statements and your code doesn't sanitize input correctly. Notice that for prepared statements, server-side prepared statements can not currently take advantage of this rewrite option, and that if you don't specify stream lengths when using PreparedStatement.set*Stream(), the driver won't be able to determine the optimum number of parameters per batch and you might receive an error from the driver that the resultant packet is too large. Statement.getGeneratedKeys() for these rewritten statements only works when the entire batch includes INSERT statements. Please be aware using rewriteBatchedStatements=true with INSERT .. ON DUPLICATE KEY UPDATE that for rewritten statement server returns only one value as sum of all affected (or found) rows in batch and it isn't possible to map it correctly to initial statements; in this case driver returns 0 as a result of each batch statement if total count was 0, and the Statement.SUCCESS_NO_INFO as a result of each batch statement if total count was > 0.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "b5b7778f-5ace-478d-86aa-e386e9121317",
+        "name" : "rollbackOnPooledClose",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver issue a rollback() when the logical connection in a pool is closed?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "7ebe0066-0456-457d-8842-939ff4abc9b3",
+        "name" : "secondsBeforeRetryMaster",
+        "choices" : [ ],
+        "description" : "How long should the driver wait, when failed over, before attempting to reconnect to the primary host? Whichever condition is met first, 'queriesBeforeRetryMaster' or 'secondsBeforeRetryMaster' will cause an attempt to be made to reconnect to the master. Setting both properties to 0 disables the automatic fall back to the primary host at transaction boundaries. Time in seconds, defaults to 30",
+        "required" : false,
+        "value" : "30"
+      }, {
+        "@uuid" : "11b41b44-73a3-4e08-9cb8-b2637fecaa2a",
+        "name" : "selfDestructOnPingMaxOperations",
+        "choices" : [ ],
+        "description" : "If set to a non-zero value, the driver will report close the connection and report failure when Connection.ping() or Connection.isValid(int) is called if the connection's count of commands sent to the server exceeds this value.",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "81e957e3-df32-4cef-bf11-7b9e97dae3dc",
+        "name" : "selfDestructOnPingSecondsLifetime",
+        "choices" : [ ],
+        "description" : "If set to a non-zero value, the driver will close the connection and report failure when Connection.ping() or Connection.isValid(int) is called if the connection's lifetime exceeds this value (in milliseconds).",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "0a0a2047-f2b2-4870-a9f3-bdff411758ce",
+        "name" : "sendFractionalSeconds",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Send fractional part from TIMESTAMP seconds. If set to false, the nanoseconds value of TIMESTAMP values will be truncated before sending any data to the server. This option applies only to prepared statements, callable statements or updatable result sets.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "f7ba0849-1144-4dbf-ad2e-8470fbde4e0e",
+        "name" : "serverAffinityOrder",
+        "choices" : [ ],
+        "description" : "A comma separated list containing the host/port pairs that are to be used in load-balancing \"serverAffinity\" strategy. Only the sub-set of the hosts enumerated in the main hosts section in this URL will be used and they must be identical in case and type, i.e., can't use an IP address in one place and the corresponding host name in the other. ",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "2d299b8f-d36e-45aa-b7e6-5eeaf9929088",
+        "name" : "serverConfigCacheFactory",
+        "choices" : [ ],
+        "description" : "Name of a class implementing com.mysql.cj.CacheAdapterFactory<String, Map<String, String>>, which will be used to create caches for MySQL server configuration values",
+        "required" : false,
+        "value" : "com.mysql.cj.util.PerVmServerConfigCacheFactory"
+      }, {
+        "@uuid" : "806e5e31-c116-4931-acf4-352061dcc309",
+        "name" : "serverRSAPublicKeyFile",
+        "choices" : [ ],
+        "description" : "File path to the server RSA public key file for sha256_password authentication. If not specified, the public key will be retrieved from the server.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "0cb41e2a-f99c-42d3-8c6c-fbe3b7ae57a1",
+        "name" : "serverTimezone",
+        "choices" : [ ],
+        "description" : "Override detection/mapping of time zone. Used when time zone from server doesn't map to Java time zone",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "b10851d2-f265-4ccd-aefd-21a194449f4a",
+        "name" : "sessionVariables",
+        "choices" : [ ],
+        "description" : "A comma or semicolon separated list of name=value pairs to be sent as SET [SESSION] ... to the server when the driver connects.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "db6546eb-d11c-4779-915b-ee301b2386e0",
+        "name" : "slowQueryThresholdMillis",
+        "choices" : [ ],
+        "description" : "If 'logSlowQueries' is enabled, how long should a query take (in ms) before it is logged as slow?",
+        "required" : false,
+        "value" : "2000"
+      }, {
+        "@uuid" : "85f82a74-9bb6-4bb7-a7b5-c20d0747045d",
+        "name" : "slowQueryThresholdNanos",
+        "choices" : [ ],
+        "description" : "If 'logSlowQueries' is enabled, 'useNanosForElapsedTime' is set to true, and this property is set to a non-zero value, the driver will use this threshold (in nanosecond units) to determine if a query was slow.",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "383b82bf-6144-4c47-862d-32b34c62a20b",
+        "name" : "socketFactory",
+        "choices" : [ ],
+        "description" : "The name of the class that the driver should use for creating socket connections to the server. This class must implement the interface 'com.mysql.cj.protocol.SocketFactory' and have public no-args constructor.",
+        "required" : false,
+        "value" : "com.mysql.cj.protocol.StandardSocketFactory"
+      }, {
+        "@uuid" : "6c6b5d82-f24b-448b-bd43-bfa4df32c04b",
+        "name" : "socketTimeout",
+        "choices" : [ ],
+        "description" : "Timeout (in milliseconds) on network socket operations (0, the default means no timeout).",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "6e5b7031-0ef8-49f3-8d9e-c3861ef23594",
+        "name" : "socksProxyHost",
+        "choices" : [ ],
+        "description" : "Name or IP address of SOCKS host to connect through.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "c312d701-d2b1-4a2e-bbd1-e9b2ac452ad6",
+        "name" : "socksProxyPort",
+        "choices" : [ ],
+        "description" : "Port of SOCKS server.",
+        "required" : false,
+        "value" : "1080"
+      }, {
+        "@uuid" : "8615e4e2-8a43-4c98-9e1f-b3726c817d3d",
+        "name" : "sslMode",
+        "choices" : [ "DISABLED", "PREFERRED", "REQUIRED", "VERIFY_CA", "VERIFY_IDENTITY" ],
+        "description" : "By default, network connections are SSL encrypted; this property permits secure connections to be turned off, or a different levels of security to be chosen. The following values are allowed: \"DISABLED\" - Establish unencrypted connections; \"PREFERRED\" - (default) Establish encrypted connections if the server enabled them, otherwise fall back to unencrypted connections; \"REQUIRED\" - Establish secure connections if the server enabled them, fail otherwise; \"VERIFY_CA\" - Like \"REQUIRED\" but additionally verify the server TLS certificate against the configured Certificate Authority (CA) certificates; \"VERIFY_IDENTITY\" - Like \"VERIFY_CA\", but additionally verify that the server certificate matches the host to which the connection is attempted.[CR] This property replaced the deprecated legacy properties \"useSSL\", \"requireSSL\", and \"verifyServerCertificate\", which are still accepted but translated into a value for \"sslMode\" if \"sslMode\" is not explicitly set: \"useSSL=false\" is translated to \"sslMode=DISABLED\"; {\"useSSL=true\", \"requireSSL=false\", \"verifyServerCertificate=false\"} is translated to \"sslMode=PREFERRED\"; {\"useSSL=true\", \"requireSSL=true\", \"verifyServerCertificate=false\"} is translated to \"sslMode=REQUIRED\"; {\"useSSL=true\" AND \"verifyServerCertificate=true\"} is translated to \"sslMode=VERIFY_CA\". There is no equivalent legacy settings for \"sslMode=VERIFY_IDENTITY\". Note that, for ALL server versions, the default setting of \"sslMode\" is \"PREFERRED\", and it is equivalent to the legacy settings of \"useSSL=true\", \"requireSSL=false\", and \"verifyServerCertificate=false\", which are different from their default settings for Connector/J 8.0.12 and earlier in some situations. Applications that continue to use the legacy properties and rely on their old default settings should be reviewed.[CR] The legacy properties are ignored if \"sslMode\" is set explicitly. If none of \"sslMode\" or \"useSSL\" is set explicitly, the default setting of \"sslMode=PREFERRED\" applies. ",
+        "required" : false,
+        "value" : "PREFERRED"
+      }, {
+        "@uuid" : "5949ca87-1c5f-45dc-9d29-0aae3c8cc2b9",
+        "name" : "strictUpdates",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver do strict checking (all primary keys selected) of updatable result sets (true, false, defaults to 'true')?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "3d32e263-1425-483b-bd5f-5af4fdf968d6",
+        "name" : "tcpKeepAlive",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If connecting using TCP/IP, should the driver set SO_KEEPALIVE?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "4172f098-3c27-4771-883b-cc8ada7f2d0b",
+        "name" : "tcpNoDelay",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If connecting using TCP/IP, should the driver set SO_TCP_NODELAY (disabling the Nagle Algorithm)?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "3be8c4eb-e7fa-4d71-ae0a-fed6847bb15e",
+        "name" : "tcpRcvBuf",
+        "choices" : [ ],
+        "description" : "If connecting using TCP/IP, should the driver set SO_RCV_BUF to the given value? The default value of '0', means use the platform default value for this property)",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "8672a73c-7014-45e2-befc-6ae74313fafc",
+        "name" : "tcpSndBuf",
+        "choices" : [ ],
+        "description" : "If connecting using TCP/IP, should the driver set SO_SND_BUF to the given value? The default value of '0', means use the platform default value for this property)",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "fbce302f-e784-40f8-acaf-dfa74e32ee6b",
+        "name" : "tcpTrafficClass",
+        "choices" : [ ],
+        "description" : "If connecting using TCP/IP, should the driver set traffic class or type-of-service fields ?See the documentation for java.net.Socket.setTrafficClass() for more information.",
+        "required" : false,
+        "value" : "0"
+      }, {
+        "@uuid" : "2871f506-f31e-4afd-8d63-4260d0c5c478",
+        "name" : "tinyInt1isBit",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver treat the datatype TINYINT(1) as the BIT type (because the server silently converts BIT -> TINYINT(1) when creating tables)?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "d0436821-abf0-42b1-85dc-01271ae1148b",
+        "name" : "traceProtocol",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the network protocol be logged at the TRACE level?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "3e102c77-93a2-4346-823e-262da7ef902d",
+        "name" : "transformedBitIsBoolean",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "If the driver converts TINYINT(1) to a different type, should it use BOOLEAN instead of BIT for future compatibility with MySQL-5.0, as MySQL-5.0 has a BIT type?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "2aff15fb-9149-4f17-968f-b9e01a3486b7",
+        "name" : "treatUtilDateAsTimestamp",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver treat java.util.Date as a TIMESTAMP for the purposes of PreparedStatement.setObject()?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "597e7fe4-d8db-4de6-9127-c70b3610fb67",
+        "name" : "trustCertificateKeyStorePassword",
+        "choices" : [ ],
+        "description" : "Password for the trusted root certificates KeyStore",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "e2648cdc-5761-4fa7-b974-5a5e834020cf",
+        "name" : "trustCertificateKeyStoreType",
+        "choices" : [ ],
+        "description" : "KeyStore type for trusted root certificates (NULL or empty means use the default, which is \"JKS\". Standard keystore types supported by the JVM are \"JKS\" and \"PKCS12\", your environment may have more available depending on what security products are installed and available to the JVM.",
+        "required" : false,
+        "value" : "JKS"
+      }, {
+        "@uuid" : "e7e806b1-0688-4d1f-ae72-e38f53e5e141",
+        "name" : "trustCertificateKeyStoreUrl",
+        "choices" : [ ],
+        "description" : "URL to the trusted root certificate KeyStore (if not specified, use defaults)",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "4ce9f30d-baee-4f73-ac14-1dcb51d52832",
+        "name" : "ultraDevHack",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Create PreparedStatements for prepareCall() when required, because UltraDev is broken and issues a prepareCall() for _all_ statements? (true/false, defaults to 'false')",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "528e4a7f-f805-4d40-bb5e-0167444519cd",
+        "name" : "useAffectedRows",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Don't set the CLIENT_FOUND_ROWS flag when connecting to the server (not JDBC-compliant, will break most applications that rely on \"found\" rows vs. \"affected rows\" for DML statements), but does cause \"correct\" update counts from \"INSERT ... ON DUPLICATE KEY UPDATE\" statements to be returned by the server.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "750abb40-2d2a-4797-b2a9-69156ef39c95",
+        "name" : "useColumnNamesInFindColumn",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Prior to JDBC-4.0, the JDBC specification had a bug related to what could be given as a \"column name\" to ResultSet methods like findColumn(), or getters that took a String property. JDBC-4.0 clarified \"column name\" to mean the label, as given in an \"AS\" clause and returned by ResultSetMetaData.getColumnLabel(), and if no AS clause, the column name. Setting this property to \"true\" will give behavior that is congruent to JDBC-3.0 and earlier versions of the JDBC specification, but which because of the specification bug could give unexpected results. This property is preferred over \"useOldAliasMetadataBehavior\" unless you need the specific behavior that it provides with respect to ResultSetMetadata.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "342ee5e6-5d28-4499-8b9a-53f22ad4af38",
+        "name" : "useCompression",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Use zlib compression when communicating with the server (true/false)?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "e26732e9-328b-459e-aa32-63f6f70c39ff",
+        "name" : "useConfigs",
+        "choices" : [ ],
+        "description" : "Load the comma-delimited list of configuration properties before parsing the URL or applying user-specified properties. These configurations are explained in the 'Configurations' of the documentation.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "9cce8620-0823-4a4f-b922-c1bb723acfa7",
+        "name" : "useCursorFetch",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver use cursor-based fetching to retrieve rows? If set to \"true\" and \"defaultFetchSize\" > 0 (or setFetchSize() > 0 is called on a statement) then the cursor-based result set will be used. Please note that \"useServerPrepStmts\" is automatically set to \"true\" in this case because cursor functionality is available only for server-side prepared statements.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "8cbbda7f-3a79-4dee-8e6c-6482867b1d9e",
+        "name" : "useHostsInPrivileges",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Add '@hostname' to users in DatabaseMetaData.getColumn/TablePrivileges() (true/false), defaults to 'true'.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "a92aecb0-6097-4bda-965c-28588cec74c8",
+        "name" : "useInformationSchema",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver use the INFORMATION_SCHEMA to derive information used by DatabaseMetaData? Default is 'true' when connecting to MySQL 8.0.3+, otherwise default is 'false'.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "8cfbcb53-c50f-42ad-8360-1db042cb8d2b",
+        "name" : "useLocalSessionState",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver refer to the internal values of autocommit and transaction isolation that are set by Connection.setAutoCommit() and Connection.setTransactionIsolation() and transaction state as maintained by the protocol, rather than querying the database or blindly sending commands to the database for commit() or rollback() method calls?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "f0e7d838-726e-4a92-adc7-8a63f69a40cd",
+        "name" : "useLocalTransactionState",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver use the in-transaction state provided by the MySQL protocol to determine if a commit() or rollback() should actually be sent to the database?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "243b74fe-181b-4fd0-8043-86addf927cf6",
+        "name" : "useNanosForElapsedTime",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "For profiling/debugging functionality that measures elapsed time, should the driver try to use nanoseconds resolution if available (JDK >= 1.5)?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "c332c03d-7b84-44a5-b35c-accdd4658a49",
+        "name" : "useOldAliasMetadataBehavior",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver use the legacy behavior for \"AS\" clauses on columns and tables, and only return aliases (if any) for ResultSetMetaData.getColumnName() or ResultSetMetaData.getTableName() rather than the original column/table name? In 5.0.x, the default value was true.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "c583dfab-95d4-44c3-9cdd-2457b62b7752",
+        "name" : "useOnlyServerErrorMessages",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Don't prepend 'standard' SQLState error messages to error messages returned by the server.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "2f348c93-01d2-4eca-8603-26fd38b29866",
+        "name" : "user",
+        "choices" : [ ],
+        "description" : "Username to authenticate as",
+        "required" : true,
+        "value" : ""
+      }, {
+        "@uuid" : "d637b61e-73cd-4845-84bf-6ff4415de95b",
+        "name" : "user",
+        "choices" : [ ],
+        "description" : "The user to connect as",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "d73ed916-6af8-4d92-9b50-f6eca21a8548",
+        "name" : "useReadAheadInput",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Use newer, optimized non-blocking, buffered input stream when reading from the server?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "85753286-d059-4f23-89ab-d48b5041cd3d",
+        "name" : "useServerPrepStmts",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Use server-side prepared statements if the server supports them?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "537a049e-724e-47b8-a3d6-5944aba25dde",
+        "name" : "useSSL",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "For 8.0.12 and earlier: Use SSL when communicating with the server (true/false), default is 'true' when connecting to MySQL 5.5.45+, 5.6.26+ or 5.7.6+, otherwise default is 'false'.[CR] For 8.0.13 and later: Default is 'true'. DEPRECATED. See sslMode property description for details.",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "4f6e5350-e475-4a2c-9fd7-f0ad4595e0d0",
+        "name" : "useStreamLengthsInPrepStmts",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Honor stream length parameter in PreparedStatement/ResultSet.setXXXStream() method calls (true/false, defaults to 'true')?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "16344411-c743-44ad-bf0f-3e93f0beaf33",
+        "name" : "useUnbufferedInput",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Don't use BufferedInputStream for reading data from the server",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "cc2ff46a-ba14-48ab-89f3-692097aabc71",
+        "name" : "useUsageAdvisor",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the driver issue 'usage' warnings advising proper and efficient usage of JDBC and MySQL Connector/J to the 'profilerEventHandler'?",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "41242339-302b-4a3c-990c-778af302e708",
+        "name" : "verifyServerCertificate",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "For 8.0.12 and earlier: If \"useSSL\" is set to \"true\", should the driver verify the server's certificate? When using this feature, the keystore parameters should be specified by the \"clientCertificateKeyStore*\" properties, rather than system properties. Default is 'false' when connecting to MySQL 5.5.45+, 5.6.26+ or 5.7.6+ and \"useSSL\" was not explicitly set to \"true\". Otherwise default is 'true'.[CR] For 8.0.13 and later: Default is 'false'. DEPRECATED. See sslMode property description for details.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "47ccfb59-62b9-43ea-a756-055022e88d96",
+        "name" : "xdevapi.asyncResponseTimeout",
+        "choices" : [ ],
+        "description" : "Timeout (in seconds) for getting server response via X Protocol. ",
+        "required" : false,
+        "value" : "300"
+      }, {
+        "@uuid" : "5d150ecb-2904-4865-aa5f-16e27349849b",
+        "name" : "xdevapi.auth",
+        "choices" : [ "EXTERNAL", "MYSQL41", "PLAIN", "SHA256_MEMORY" ],
+        "description" : "Authentication mechanism to use with the X Protocol. Allowed values are \"SHA256_MEMORY\", \"MYSQL41\", \"PLAIN\", and \"EXTERNAL\". Value is case insensitive. If the property is not set, the mechanism is chosen depending on the connection type: \"PLAIN\" is used for TLS connections and \"SHA256_MEMORY\" or \"MYSQL41\" is used for unencrypted connections.",
+        "required" : false,
+        "value" : "PLAIN"
+      }, {
+        "@uuid" : "2fa35e23-6bdb-4676-b1c4-574d809a56c4",
+        "name" : "xdevapi.compression",
+        "choices" : [ "DISABLED", "PREFERRED", "REQUIRED" ],
+        "description" : "X DevAPI-specific network traffic compression. This option accepts one of the three values: \"PREFERRED\", \"REQUIRED\", and \"DISABLED\". Setting this option to \"PREFERRED\" or \"REQUIRED\" enables compression algorithm negotiation between Connector and Server, and turns on compression of large X Protocol packets, as long as a consensus is reached between client and server regarding the compression algorithm to use. If a consensus cannot be reached, connection fails if the option is set to \"REQUIRED\" and continues without compression if the option is set to \"PREFERRED\". Setting this option as \"DISABLED\" skips the compression negotiation phase and forbids the interchange of compressed messages between client and server.",
+        "required" : false,
+        "value" : "PREFERRED"
+      }, {
+        "@uuid" : "96f95b86-40e9-4f76-9585-d344cd587ef6",
+        "name" : "xdevapi.compression-algorithm",
+        "choices" : [ ],
+        "description" : "A comma-delimited list of triplets, with their elements also comma delimited, that enables the support for additional compression algorithms. Each triplet must contain: first, an algorithm name and operating mode (e.g. \"lz4_message\" -- consult the description for the MySQL global variable 'mysqlx_compression_algorithms' for a list of supported and enabled algorithms); second, a fully-qualified class name of a class implementing the interface java.io.InputStream that will be used to inflate data compressed with the named algorithm; third, a fully-qualified class name of a class implementing the interface java.io.OutputStream that will be used to deflate data using the named algorithm. Along with this setting, the library containing implementations of the designated classes must be available in the applications class path.[CR]Any number of triplets defining compression algorithms and their inflater and deflater implementations can be provided but only the ones supported and enabled on the MySQL Server can be used.[CR]The compression algorithm 'deflate_stream' is supported natively. Additional compression algorithms require using third-party libraries.[CR]This option is meaningful only when network traffic compression is enabled using the connection property 'xdevapi.compression'.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "d55f1e8f-2f03-46b7-b88b-1b8a9e09f006",
+        "name" : "xdevapi.connect-timeout",
+        "choices" : [ ],
+        "description" : "X DevAPI-specific timeout for socket connect (in milliseconds), with '0' being no timeout. Defaults to '10000'. If \"xdevapi.connect-timeout\" is not set explicitly and \"connectTimeout\" is, \"xdevapi.connect-timeout\" takes up the value of \"connectTimeout\". If \"xdevapi.useAsyncProtocol=true\", both \"xdevapi.connect-timeout\" and \"connectTimeout\" are ignored.",
+        "required" : false,
+        "value" : "10000"
+      }, {
+        "@uuid" : "7e4e2b8b-93d5-408f-90d0-0356b327d0c6",
+        "name" : "xdevapi.connection-attributes",
+        "choices" : [ ],
+        "description" : "An X DevAPI-specific comma-delimited list of user-defined key=value pairs (in addition to standard X Protocol-defined key=value pairs) to be passed to MySQL Server for display as connection attributes in PERFORMANCE_SCHEMA tables session_account_connect_attrs and session_connect_attrs. Example usage: xdevapi.connection-attributes=key1=value1,key2=value2 or xdevapi.connection-attributes=[key1=value1,key2=value2]. This functionality is available for use with MySQL Server version 8.0.16 or later only. Earlier versions of X Protocol do not support connection attributes, causing this configuration option to be ignored. For situations where Session creation/initialization speed is critical, setting xdevapi.connection-attributes=false will cause connection attribute processing to be bypassed.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "84b66eed-5604-4bc5-af24-bc2b910bf2b8",
+        "name" : "xdevapi.dns-srv",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "X DevAPI-specific option for instructing the driver use the given host name to lookup for DNS SRV records and use the resulting list of hosts in a multi-host failover connection. Note that a single host name and no port must be provided when this option is enabled.",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "24828970-bf3f-4e68-bfc3-6878eaefa76b",
+        "name" : "xdevapi.ssl-mode",
+        "choices" : [ "DISABLED", "REQUIRED", "VERIFY_CA", "VERIFY_IDENTITY" ],
+        "description" : "X DevAPI-specific SSL mode setting. If not specified, use \"sslMode\". Because the \"PREFERRED\" mode is not applicable to X Protocol, if \"xdevapi.ssl-mode\" is not set and \"sslMode\" is set to \"PREFERRED\", \"xdevapi.ssl-mode\" is set to \"REQUIRED\".",
+        "required" : false,
+        "value" : "REQUIRED"
+      }, {
+        "@uuid" : "aff8e9a2-8062-4223-b839-737c0db1a322",
+        "name" : "xdevapi.ssl-truststore",
+        "choices" : [ ],
+        "description" : "X DevAPI-specific URL to the trusted CA certificates key store. If not specified, use trustCertificateKeyStoreUrl value.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "6469d418-9587-41c9-a239-b9497997bfad",
+        "name" : "xdevapi.ssl-truststore-password",
+        "choices" : [ ],
+        "description" : "X DevAPI-specific password for the trusted CA certificates key store. If not specified, use trustCertificateKeyStorePassword value.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "4649f9d2-439b-4d3a-b789-9eac334c519d",
+        "name" : "xdevapi.ssl-truststore-type",
+        "choices" : [ ],
+        "description" : "X DevAPI-specific type of the trusted CA certificates key store. If not specified, use trustCertificateKeyStoreType value.",
+        "required" : false,
+        "value" : "JKS"
+      }, {
+        "@uuid" : "5e353f0e-349b-4c27-af34-b9c849611e86",
+        "name" : "xdevapi.tls-ciphersuites",
+        "choices" : [ ],
+        "description" : "X DevAPI-specific property overriding the cipher suites enabled for use on the underlying SSL sockets. If not specified, the value of enabledSSLCipherSuites is used.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "bd26d566-2198-46df-a736-26cc402c4e0f",
+        "name" : "xdevapi.tls-versions",
+        "choices" : [ ],
+        "description" : "X DevAPI-specific property overriding the TLS protocols enabled for use on the underlying SSL sockets. If not specified, the value of enabledTLSProtocols is used.",
+        "required" : false,
+        "value" : null
+      }, {
+        "@uuid" : "114008d9-f94e-4a80-a30f-ea1e54b5d66f",
+        "name" : "xdevapi.useAsyncProtocol",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Use asynchronous variant of X Protocol",
+        "required" : false,
+        "value" : "false"
+      }, {
+        "@uuid" : "2c65bb22-b232-4f7c-83fd-f2afcafb15f5",
+        "name" : "yearIsDateType",
+        "choices" : [ "FALSE", "NO", "TRUE", "YES" ],
+        "description" : "Should the JDBC driver treat the MySQL type \"YEAR\" as a java.sql.Date, or as a SHORT?",
+        "required" : false,
+        "value" : "true"
+      }, {
+        "@uuid" : "26947735-6723-48db-817a-26703f662a02",
+        "name" : "zeroDateTimeBehavior",
+        "choices" : [ "CONVERT_TO_NULL", "EXCEPTION", "ROUND" ],
+        "description" : "What should happen when the driver encounters DATETIME values that are composed entirely of zeros (used by MySQL to represent invalid dates)? Valid values are \"EXCEPTION\", \"ROUND\" and \"CONVERT_TO_NULL\".",
+        "required" : false,
+        "value" : "EXCEPTION"
+      } ],
+      "jdbc-compliant" : false,
+      "product-name" : "MySQL Connector/J",
+      "product-version" : "mysql-connector-java-8.0.21 (Revision: 33f65445a1bcc544eb0120491926484da168f199)"
+    },
+    "schemas" : [ "2da06ce4-6e5c-4e4b-b55c-57eed81b474d" ],
+    "system-column-data-types" : [ {
+      "@uuid" : "ca229ae4-ebe1-4127-93d6-5a77c051c5c8",
+      "name" : "BIGINT",
+      "full-name" : "BIGINT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "BIGINT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "27403716-5621-4a0c-a0c2-203f2cd7193c",
+        "name" : "BIGINT",
+        "default-mapped-class" : "java.lang.Long",
+        "java-sql-type-group" : "integer",
+        "vendor" : "java.sql",
+        "vendor-type-number" : -5
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "BIGINT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 19,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Long",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "d7cda7da-afb6-4d9f-8853-6f305fd15801",
+      "name" : "BIGINT UNSIGNED",
+      "full-name" : "BIGINT UNSIGNED",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "BIGINT UNSIGNED",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "27403716-5621-4a0c-a0c2-203f2cd7193c",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "BIGINT UNSIGNED",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 20,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Long",
+      "unsigned" : true,
+      "user-defined" : false
+    }, {
+      "@uuid" : "75264036-5e1c-4e79-87de-9bfe2c206f19",
+      "name" : "BINARY",
+      "full-name" : "BINARY",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "(M)",
+      "database-specific-type-name" : "BINARY",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "f29d56bf-ad3b-475c-9107-19f12e7cec15",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "BINARY",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 255,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "[B",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "2fc61e21-8bed-4685-8a97-c8ed94d616a4",
+      "name" : "BIT",
+      "full-name" : "BIT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)]",
+      "database-specific-type-name" : "BIT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "05977d7b-dce0-4808-a690-60d74e1b84f5",
+        "name" : "BIT",
+        "default-mapped-class" : "java.lang.Boolean",
+        "java-sql-type-group" : "bit",
+        "vendor" : "java.sql",
+        "vendor-type-number" : -7
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "BIT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 1,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Boolean",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "3d7a9492-9430-4099-9ccb-081910e451b4",
+      "name" : "BLOB",
+      "full-name" : "BLOB",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)]",
+      "database-specific-type-name" : "BLOB",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "c97df5ce-6c2d-45f1-a2ce-45d7efd9f40d",
+        "name" : "LONGVARBINARY",
+        "default-mapped-class" : "[B",
+        "java-sql-type-group" : "binary",
+        "vendor" : "java.sql",
+        "vendor-type-number" : -4
+      },
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "BLOB",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 65535,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.sql.Blob",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "73f7ee27-0e55-4bca-93a6-c1f0bdf4f167",
+      "name" : "BOOL",
+      "full-name" : "BOOL",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "",
+      "database-specific-type-name" : "BOOL",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "766916e9-d525-45b0-b093-a670e533fcc7",
+        "name" : "BOOLEAN",
+        "default-mapped-class" : "java.lang.Boolean",
+        "java-sql-type-group" : "bit",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 16
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "BOOLEAN",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 3,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Boolean",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "e68f8ed4-2da2-41cb-9ae1-11ef77bf506d",
+      "name" : "CHAR",
+      "full-name" : "CHAR",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "CHAR",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "d7c5fd45-1b9b-4e43-9631-2aeac94fb415",
+        "name" : "CHAR",
+        "default-mapped-class" : "java.lang.String",
+        "java-sql-type-group" : "character",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 1
+      },
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "CHAR",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 255,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "2583cf47-2255-417d-8062-bdf919a7321b",
+      "name" : "DATE",
+      "full-name" : "DATE",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "",
+      "database-specific-type-name" : "DATE",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "685dcd03-7681-45df-aa08-0a9c21efbe7e",
+        "name" : "DATE",
+        "default-mapped-class" : "java.sql.Date",
+        "java-sql-type-group" : "temporal",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 91
+      },
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "DATE",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 10,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.sql.Date",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "f21e5815-4127-49da-a781-17f2f500188e",
+      "name" : "DATETIME",
+      "full-name" : "DATETIME",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(fsp)]",
+      "database-specific-type-name" : "DATETIME",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "b6687244-7920-49e1-aa02-819861eef2ef",
+        "name" : "TIMESTAMP",
+        "default-mapped-class" : "java.sql.Timestamp",
+        "java-sql-type-group" : "temporal",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 93
+      },
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "DATETIME",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 26,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.sql.Timestamp",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "23219575-263c-4f8f-8704-43c98b07af6f",
+      "name" : "DECIMAL",
+      "full-name" : "DECIMAL",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M[,D])] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "DECIMAL",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "e9dc3a06-0919-4ae4-8414-4c256c4d246a",
+        "name" : "DECIMAL",
+        "default-mapped-class" : "java.math.BigDecimal",
+        "java-sql-type-group" : "real",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 3
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "DECIMAL",
+      "maximum-scale" : 308,
+      "minimum-scale" : -308,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 65,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.math.BigDecimal",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "060b535c-1fde-4515-ac98-328fb016c9d4",
+      "name" : "DOUBLE",
+      "full-name" : "DOUBLE",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M,D)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "DOUBLE",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "2ebc72c8-ddc2-4647-8397-5984264c34f5",
+        "name" : "DOUBLE",
+        "default-mapped-class" : "java.lang.Double",
+        "java-sql-type-group" : "real",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 8
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "DOUBLE",
+      "maximum-scale" : 308,
+      "minimum-scale" : -308,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 22,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Double",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "b93f20e9-25ef-49c4-88dd-3193b46dcaf8",
+      "name" : "DOUBLE PRECISION",
+      "full-name" : "DOUBLE PRECISION",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M,D)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "DOUBLE PRECISION",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "2ebc72c8-ddc2-4647-8397-5984264c34f5",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "DOUBLE",
+      "maximum-scale" : 308,
+      "minimum-scale" : -308,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 22,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Double",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "11738e0b-0765-4643-96de-451c6018f90d",
+      "name" : "ENUM",
+      "full-name" : "ENUM",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "('value1','value2',...) [CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "ENUM",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "d7c5fd45-1b9b-4e43-9631-2aeac94fb415",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "ENUM",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 65535,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "ecfc58f1-e640-4605-840f-5df929855445",
+      "name" : "FLOAT",
+      "full-name" : "FLOAT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M,D)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "FLOAT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "20c49579-10b3-4329-b63a-3e5e6529b72b",
+        "name" : "REAL",
+        "default-mapped-class" : "java.lang.Float",
+        "java-sql-type-group" : "real",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 7
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "FLOAT",
+      "maximum-scale" : 38,
+      "minimum-scale" : -38,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 12,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Double",
+      "unsigned" : false,
+      "user-defined" : false
+    }, "df6b0076-a0bd-4291-b3e0-31a8723329aa", {
+      "@uuid" : "97766242-cde0-4ca5-8505-3b72a34edc8b",
+      "name" : "INTEGER",
+      "full-name" : "INTEGER",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "INTEGER",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "52a1aa2e-e31e-4993-a5d5-eb99de44a376",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "INT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 10,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "32a35c98-1d61-4414-840c-75227188f9b6",
+      "name" : "INTEGER UNSIGNED",
+      "full-name" : "INTEGER UNSIGNED",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "INTEGER UNSIGNED",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "52a1aa2e-e31e-4993-a5d5-eb99de44a376",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "INT UNSIGNED",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 10,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : true,
+      "user-defined" : false
+    }, {
+      "@uuid" : "69e29ca2-54a8-401c-99bb-6d19c6cc1b8e",
+      "name" : "INT UNSIGNED",
+      "full-name" : "INT UNSIGNED",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "INT UNSIGNED",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "52a1aa2e-e31e-4993-a5d5-eb99de44a376",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "INT UNSIGNED",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 10,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : true,
+      "user-defined" : false
+    }, {
+      "@uuid" : "2e189e82-ed83-4ca9-9c3f-5e976e3788c8",
+      "name" : "LONGBLOB",
+      "full-name" : "LONGBLOB",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "",
+      "database-specific-type-name" : "LONGBLOB",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "c97df5ce-6c2d-45f1-a2ce-45d7efd9f40d",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "LONGBLOB",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 2147483647,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "[B",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "1ceccb28-8e47-46b9-a8d5-2db5cd02c047",
+      "name" : "LONGTEXT",
+      "full-name" : "LONGTEXT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "LONGTEXT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "8195ff9a-d1e1-4a67-bc47-977153d41b07",
+        "name" : "LONGVARCHAR",
+        "default-mapped-class" : "java.lang.String",
+        "java-sql-type-group" : "character",
+        "vendor" : "java.sql",
+        "vendor-type-number" : -1
+      },
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "LONGTEXT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 2147483647,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "5dec4afa-31fb-44dd-b9c2-834907ace876",
+      "name" : "LONG VARBINARY",
+      "full-name" : "LONG VARBINARY",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "",
+      "database-specific-type-name" : "LONG VARBINARY",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "c97df5ce-6c2d-45f1-a2ce-45d7efd9f40d",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "MEDIUMBLOB",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 16777215,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "[B",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "874f71e8-de00-42a4-8e2d-e05dc9a686a8",
+      "name" : "LONG VARCHAR",
+      "full-name" : "LONG VARCHAR",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "LONG VARCHAR",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "8195ff9a-d1e1-4a67-bc47-977153d41b07",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "MEDIUMTEXT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 16777215,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "28d43a7c-22a5-4bdd-a3bf-442b473db2dd",
+      "name" : "MEDIUMBLOB",
+      "full-name" : "MEDIUMBLOB",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "",
+      "database-specific-type-name" : "MEDIUMBLOB",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "c97df5ce-6c2d-45f1-a2ce-45d7efd9f40d",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "MEDIUMBLOB",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 16777215,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "[B",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "2da48de7-7af7-4ad2-aedb-7d1c5d25988b",
+      "name" : "MEDIUMINT",
+      "full-name" : "MEDIUMINT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "MEDIUMINT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "52a1aa2e-e31e-4993-a5d5-eb99de44a376",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "MEDIUMINT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 7,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "baaa5057-e7e6-4f56-b797-b3fcdd5c05da",
+      "name" : "MEDIUMINT UNSIGNED",
+      "full-name" : "MEDIUMINT UNSIGNED",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "MEDIUMINT UNSIGNED",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "52a1aa2e-e31e-4993-a5d5-eb99de44a376",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "MEDIUMINT UNSIGNED",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 8,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : true,
+      "user-defined" : false
+    }, {
+      "@uuid" : "0075fff1-6c12-4eff-a70b-84e492c159ef",
+      "name" : "MEDIUMTEXT",
+      "full-name" : "MEDIUMTEXT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "MEDIUMTEXT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "8195ff9a-d1e1-4a67-bc47-977153d41b07",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "MEDIUMTEXT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 16777215,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "63f6928b-92e2-413a-8ed9-2c2d5ad1b4d5",
+      "name" : "NUMERIC",
+      "full-name" : "NUMERIC",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M[,D])] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "NUMERIC",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "e9dc3a06-0919-4ae4-8414-4c256c4d246a",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "DECIMAL",
+      "maximum-scale" : 308,
+      "minimum-scale" : -308,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 65,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.math.BigDecimal",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "fa711d16-08ac-40a9-b280-9d44c04438b1",
+      "name" : "REAL",
+      "full-name" : "REAL",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M,D)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "REAL",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "2ebc72c8-ddc2-4647-8397-5984264c34f5",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "DOUBLE",
+      "maximum-scale" : 308,
+      "minimum-scale" : -308,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 22,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Float",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "ac14244f-5e46-42c7-a09f-49f0eca23d73",
+      "name" : "SET",
+      "full-name" : "SET",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "('value1','value2',...) [CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "SET",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "d7c5fd45-1b9b-4e43-9631-2aeac94fb415",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "SET",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 64,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "e1f1d2c5-8a03-460e-b6b3-b6dd0ef95638",
+      "name" : "SMALLINT",
+      "full-name" : "SMALLINT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "SMALLINT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "07e222b3-b869-4903-948c-6a405d61e63e",
+        "name" : "SMALLINT",
+        "default-mapped-class" : "java.lang.Integer",
+        "java-sql-type-group" : "integer",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 5
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "SMALLINT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 5,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "d481daf1-d9f0-48dc-8f66-616c8717f697",
+      "name" : "SMALLINT UNSIGNED",
+      "full-name" : "SMALLINT UNSIGNED",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "SMALLINT UNSIGNED",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "07e222b3-b869-4903-948c-6a405d61e63e",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "SMALLINT UNSIGNED",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 5,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : true,
+      "user-defined" : false
+    }, {
+      "@uuid" : "a71cb165-fd8d-4e7d-80c0-538e08c24a51",
+      "name" : "TEXT",
+      "full-name" : "TEXT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "TEXT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "8195ff9a-d1e1-4a67-bc47-977153d41b07",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "TEXT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 65535,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "4cadac08-226f-4fd0-bde6-01adf25f8a15",
+      "name" : "TIME",
+      "full-name" : "TIME",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(fsp)]",
+      "database-specific-type-name" : "TIME",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "f42f598d-b8a3-438f-a688-b03b321ecb7a",
+        "name" : "TIME",
+        "default-mapped-class" : "java.sql.Time",
+        "java-sql-type-group" : "temporal",
+        "vendor" : "java.sql",
+        "vendor-type-number" : 92
+      },
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "TIME",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 16,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.sql.Time",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "deda4fe7-504a-4ef1-9153-7cf08b9ce2da",
+      "name" : "TIMESTAMP",
+      "full-name" : "TIMESTAMP",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(fsp)]",
+      "database-specific-type-name" : "TIMESTAMP",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "b6687244-7920-49e1-aa02-819861eef2ef",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "TIMESTAMP",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 26,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.sql.Timestamp",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "640c1962-1667-4e61-add3-f5e6be3cc343",
+      "name" : "TINYBLOB",
+      "full-name" : "TINYBLOB",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "",
+      "database-specific-type-name" : "TINYBLOB",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "c3f0056e-ba6d-4221-88b8-308ff917184f",
+        "name" : "VARBINARY",
+        "default-mapped-class" : "[B",
+        "java-sql-type-group" : "binary",
+        "vendor" : "java.sql",
+        "vendor-type-number" : -3
+      },
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "TINYBLOB",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 255,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "[B",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "19e8dfee-9364-41c5-b36d-12b9882cab2e",
+      "name" : "TINYINT",
+      "full-name" : "TINYINT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "TINYINT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : {
+        "@uuid" : "c357c9d7-cbb9-4dbd-91e6-2f91798f6ed2",
+        "name" : "TINYINT",
+        "default-mapped-class" : "java.lang.Integer",
+        "java-sql-type-group" : "integer",
+        "vendor" : "java.sql",
+        "vendor-type-number" : -6
+      },
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "TINYINT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 3,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "7f672492-8e74-42b2-bac5-f59e14e2fc09",
+      "name" : "TINYINT UNSIGNED",
+      "full-name" : "TINYINT UNSIGNED",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(M)] [UNSIGNED] [ZEROFILL]",
+      "database-specific-type-name" : "TINYINT UNSIGNED",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "c357c9d7-cbb9-4dbd-91e6-2f91798f6ed2",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "TINYINT UNSIGNED",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 3,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.Integer",
+      "unsigned" : true,
+      "user-defined" : false
+    }, {
+      "@uuid" : "8fba9b08-d86a-4cc7-ba04-a297f03325dd",
+      "name" : "TINYTEXT",
+      "full-name" : "TINYTEXT",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[CHARACTER SET charset_name] [COLLATE collation_name]",
+      "database-specific-type-name" : "TINYTEXT",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "1ad5c507-c485-4bec-9b14-7c9f2f3448df",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "TINYTEXT",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 255,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.lang.String",
+      "unsigned" : false,
+      "user-defined" : false
+    }, {
+      "@uuid" : "eb06cf8d-48ff-42a7-92ca-c04037fb313e",
+      "name" : "VARBINARY",
+      "full-name" : "VARBINARY",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "(M)",
+      "database-specific-type-name" : "VARBINARY",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "c3f0056e-ba6d-4221-88b8-308ff917184f",
+      "literal-prefix" : "'",
+      "literal-suffix" : "'",
+      "local-type-name" : "VARBINARY",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 65535,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "[B",
+      "unsigned" : false,
+      "user-defined" : false
+    }, "f7f7402c-ff88-4d39-a6fc-4a7a41b61957", {
+      "@uuid" : "765cc875-962f-4a4a-be73-c0cb2f80026b",
+      "name" : "YEAR",
+      "full-name" : "YEAR",
+      "attributes" : {
+        "SQL_DATA_TYPE" : 0,
+        "SQL_DATETIME_SUB" : 0
+      },
+      "auto-incrementable" : false,
+      "base-type" : null,
+      "case-sensitive" : true,
+      "create-parameters" : "[(4)]",
+      "database-specific-type-name" : "YEAR",
+      "enum-values" : [ ],
+      "enumerated" : false,
+      "fixed-precision-scale" : false,
+      "java-sql-type" : "685dcd03-7681-45df-aa08-0a9c21efbe7e",
+      "literal-prefix" : "",
+      "literal-suffix" : "",
+      "local-type-name" : "YEAR",
+      "maximum-scale" : 0,
+      "minimum-scale" : 0,
+      "nullable" : true,
+      "num-precision-radix" : 10,
+      "precision" : 4,
+      "remarks" : null,
+      "schema" : "7899a455-9270-491b-b793-98136fd87cbb",
+      "searchable" : "searchable",
+      "type-mapped-class" : "java.sql.Date",
+      "unsigned" : false,
+      "user-defined" : false
+    } ],
+    "column-data-types" : [ "ca229ae4-ebe1-4127-93d6-5a77c051c5c8", "d7cda7da-afb6-4d9f-8853-6f305fd15801", "75264036-5e1c-4e79-87de-9bfe2c206f19", "2fc61e21-8bed-4685-8a97-c8ed94d616a4", "3d7a9492-9430-4099-9ccb-081910e451b4", "73f7ee27-0e55-4bca-93a6-c1f0bdf4f167", "e68f8ed4-2da2-41cb-9ae1-11ef77bf506d", "2583cf47-2255-417d-8062-bdf919a7321b", "f21e5815-4127-49da-a781-17f2f500188e", "23219575-263c-4f8f-8704-43c98b07af6f", "060b535c-1fde-4515-ac98-328fb016c9d4", "b93f20e9-25ef-49c4-88dd-3193b46dcaf8", "11738e0b-0765-4643-96de-451c6018f90d", "ecfc58f1-e640-4605-840f-5df929855445", "df6b0076-a0bd-4291-b3e0-31a8723329aa", "97766242-cde0-4ca5-8505-3b72a34edc8b", "32a35c98-1d61-4414-840c-75227188f9b6", "69e29ca2-54a8-401c-99bb-6d19c6cc1b8e", "2e189e82-ed83-4ca9-9c3f-5e976e3788c8", "1ceccb28-8e47-46b9-a8d5-2db5cd02c047", "5dec4afa-31fb-44dd-b9c2-834907ace876", "874f71e8-de00-42a4-8e2d-e05dc9a686a8", "28d43a7c-22a5-4bdd-a3bf-442b473db2dd", "2da48de7-7af7-4ad2-aedb-7d1c5d25988b", "baaa5057-e7e6-4f56-b797-b3fcdd5c05da", "0075fff1-6c12-4eff-a70b-84e492c159ef", "63f6928b-92e2-413a-8ed9-2c2d5ad1b4d5", "fa711d16-08ac-40a9-b280-9d44c04438b1", "ac14244f-5e46-42c7-a09f-49f0eca23d73", "e1f1d2c5-8a03-460e-b6b3-b6dd0ef95638", "d481daf1-d9f0-48dc-8f66-616c8717f697", "a71cb165-fd8d-4e7d-80c0-538e08c24a51", "4cadac08-226f-4fd0-bde6-01adf25f8a15", "deda4fe7-504a-4ef1-9153-7cf08b9ce2da", "640c1962-1667-4e61-add3-f5e6be3cc343", "19e8dfee-9364-41c5-b36d-12b9882cab2e", "7f672492-8e74-42b2-bac5-f59e14e2fc09", "8fba9b08-d86a-4cc7-ba04-a297f03325dd", "eb06cf8d-48ff-42a7-92ca-c04037fb313e", "f7f7402c-ff88-4d39-a6fc-4a7a41b61957", "765cc875-962f-4a4a-be73-c0cb2f80026b", "70995f8b-ce41-4652-b45a-5df11f126ad6" ],
+    "attributes" : { },
+    "database-users" : [ ],
+    "remarks" : null,
+    "routines" : [ ],
+    "sequences" : [ ],
+    "synonyms" : [ ],
+    "tables" : [ {
+      "@uuid" : "8ba8e6b7-dfb7-47ff-9732-4ef422a6a14a",
+      "name" : "geom",
+      "full-name" : "data_type.geom",
+      "attributes" : {
+        "AUTO_INCREMENT" : 5,
+        "AVG_ROW_LENGTH" : 4096,
+        "CREATE_TIME" : 1605675396000,
+        "DATA_FREE" : 0,
+        "DATA_LENGTH" : 16384,
+        "ENGINE" : "InnoDB",
+        "INDEX_LENGTH" : 0,
+        "MAX_DATA_LENGTH" : 0,
+        "ROW_FORMAT" : "Dynamic",
+        "TABLE_COLLATION" : "latin1_swedish_ci",
+        "TABLE_COMMENT" : "",
+        "TABLE_ROWS" : 4,
+        "TABLE_SCHEMA" : null
+      },
+      "columns" : [ "c01b85cc-2e0e-437e-b1f9-8917e91ab58a", "e8a8d63d-1344-4f4e-aea1-7d1df664bd93" ],
+      "definition" : "",
+      "foreign-keys" : [ ],
+      "hidden-columns" : [ ],
+      "indexes" : [ {
+        "@uuid" : "c8cc7217-aee4-460f-9ddd-da3b54894dab",
+        "name" : "PRIMARY",
+        "short-name" : "geom.\"PRIMARY\"",
+        "full-name" : "data_type.geom.\"PRIMARY\"",
+        "attributes" : {
+          "FILTER_CONDITION" : null,
+          "INDEX_QUALIFIER" : null,
+          "INDEX_SCHEMA" : null,
+          "TABLE_CAT" : "data_type",
+          "TABLE_CATALOG" : "data_type",
+          "TABLE_NAME" : "geom",
+          "TABLE_SCHEM" : null,
+          "TABLE_SCHEMA" : null
+        },
+        "cardinality" : 4,
+        "columns" : [ "c01b85cc-2e0e-437e-b1f9-8917e91ab58a" ],
+        "definition" : "",
+        "index-type" : "other",
+        "pages" : 0,
+        "parent-partial" : false,
+        "remarks" : "",
+        "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+        "type" : "other",
+        "unique" : true
+      } ],
+      "primary-key" : "c8cc7217-aee4-460f-9ddd-da3b54894dab",
+      "privileges" : [ ],
+      "remarks" : "",
+      "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+      "table-constraints" : [ ],
+      "table-type" : {
+        "@uuid" : "294e85aa-4410-4d8b-839c-f004042a3522",
+        "table-type" : "TABLE",
+        "view" : false
+      },
+      "triggers" : [ ],
+      "type" : "294e85aa-4410-4d8b-839c-f004042a3522",
+      "weak-associations" : [ ]
+    }, {
+      "@uuid" : "c52032c9-210c-4a12-a4e2-1ad2f4c0fd8e",
+      "name" : "geotest",
+      "full-name" : "data_type.geotest",
+      "attributes" : {
+        "AUTO_INCREMENT" : 8,
+        "AVG_ROW_LENGTH" : 2340,
+        "CREATE_TIME" : 1605674823000,
+        "DATA_FREE" : 0,
+        "DATA_LENGTH" : 16384,
+        "ENGINE" : "InnoDB",
+        "INDEX_LENGTH" : 0,
+        "MAX_DATA_LENGTH" : 0,
+        "ROW_FORMAT" : "Dynamic",
+        "TABLE_COLLATION" : "latin1_swedish_ci",
+        "TABLE_COMMENT" : "",
+        "TABLE_ROWS" : 7,
+        "TABLE_SCHEMA" : null
+      },
+      "columns" : [ "c4c19870-b2b0-4495-a1d8-ab1b769e9a87", "9442ab8a-0829-4283-bfb3-96a24fc0d54a", "b029f141-e29f-4068-87c8-26b0341a01e9", "b56be8e6-0683-495a-85a2-d8f25e7dbd0e" ],
+      "definition" : "",
+      "foreign-keys" : [ ],
+      "hidden-columns" : [ ],
+      "indexes" : [ {
+        "@uuid" : "4be2ea51-1b72-4f6c-8ffd-172c2d679c59",
+        "name" : "PRIMARY",
+        "short-name" : "geotest.\"PRIMARY\"",
+        "full-name" : "data_type.geotest.\"PRIMARY\"",
+        "attributes" : {
+          "FILTER_CONDITION" : null,
+          "INDEX_QUALIFIER" : null,
+          "INDEX_SCHEMA" : null,
+          "TABLE_CAT" : "data_type",
+          "TABLE_CATALOG" : "data_type",
+          "TABLE_NAME" : "geotest",
+          "TABLE_SCHEM" : null,
+          "TABLE_SCHEMA" : null
+        },
+        "cardinality" : 6,
+        "columns" : [ "c4c19870-b2b0-4495-a1d8-ab1b769e9a87" ],
+        "definition" : "",
+        "index-type" : "other",
+        "pages" : 0,
+        "parent-partial" : false,
+        "remarks" : "",
+        "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+        "type" : "other",
+        "unique" : true
+      } ],
+      "primary-key" : "4be2ea51-1b72-4f6c-8ffd-172c2d679c59",
+      "privileges" : [ ],
+      "remarks" : "",
+      "schema" : "2da06ce4-6e5c-4e4b-b55c-57eed81b474d",
+      "table-constraints" : [ ],
+      "table-type" : "294e85aa-4410-4d8b-839c-f004042a3522",
+      "triggers" : [ ],
+      "type" : "294e85aa-4410-4d8b-839c-f004042a3522",
+      "weak-associations" : [ ]
+    } ]
+  }
+}
