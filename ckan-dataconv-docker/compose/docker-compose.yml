@@ -1,0 +1,173 @@
+# docker-compose build && docker-compose up -d
+version: "3"
+
+volumes:
+  ckan_data:
+  pg_data:
+  solr_data:
+  mysql_data:
+  mongo_data:
+
+services:
+  ckan:
+    container_name: ckan
+    # image: keitaro/ckan:${CKAN_VERSION}
+    # image: dangsg/ckan:2.9
+    image: tamanhhuy/dataconv:latest
+
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - db
+      - mysql
+      - mongo
+    ports:
+      - "0.0.0.0:${CKAN_PORT}:5000"
+    env_file:
+      - ./.ckan-env
+    environment:
+      - CKAN_SQLALCHEMY_URL=postgresql://ckan:${POSTGRES_PASSWORD}@db/ckan
+      - CKAN_DATASTORE_WRITE_URL=postgresql://ckan:${POSTGRES_PASSWORD}@db/datastore
+      - CKAN_DATASTORE_READ_URL=postgresql://datastore_ro:${DATASTORE_READONLY_PASSWORD}@db/datastore
+      - CKAN_SOLR_URL=http://solr:8983/solr/ckan
+      - CKAN_REDIS_URL=redis://redis:6379/1
+      - CKAN_SITE_URL=${CKAN_SITE_URL}
+      - CKAN_MAX_UPLOAD_SIZE_MB=${CKAN_MAX_UPLOAD_SIZE_MB}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - DS_RO_PASS=${DATASTORE_READONLY_PASSWORD}
+    volumes:
+      - ckan_data:/srv/app/data
+    links:
+      - "mysql:mysql"
+
+  datapusher:
+    container_name: datapusher
+    image: keitaro/ckan-datapusher:${DATAPUSHER_VERSION}
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATAPUSHER_MAX_CONTENT_LENGTH=${DATAPUSHER_MAX_CONTENT_LENGTH}
+      - DATAPUSHER_CHUNK_SIZE=${DATAPUSHER_CHUNK_SIZE}
+      - DATAPUSHER_CHUNK_INSERT_ROWS=${DATAPUSHER_CHUNK_INSERT_ROWS}
+      - DATAPUSHER_DOWNLOAD_TIMEOUT=${DATAPUSHER_DOWNLOAD_TIMEOUT}
+      - DATAPUSHER_SSL_VERIFY=${DATA_PUSHER_SSL_VERIFY}
+      - DATAPUSHER_REWRITE_RESOURCES=${DATAPUSHER_REWRITE_RESOURCES}
+      - DATAPUSHER_REWRITE_URL=${DATAPUSHER_REWRITE_URL}
+
+  db:
+    container_name: db
+    build:
+      context: .
+      dockerfile: postgresql/Dockerfile
+      args:
+        - DS_RO_PASS=${DATASTORE_READONLY_PASSWORD}
+        - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    networks:
+      - backend
+    environment:
+      - DS_RO_PASS=${DATASTORE_READONLY_PASSWORD}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "ckan"]
+
+  solr:
+    container_name: solr
+    build:
+      context: .
+      dockerfile: solr/Dockerfile
+      args:
+        - CKAN_VERSION=${CKAN_VERSION}
+    networks:
+      - backend
+    volumes:
+      - solr_data:/opt/solr/server/solr/ckan/data
+
+  redis:
+    container_name: redis
+    image: redis:${REDIS_VERSION}
+    networks:
+      - backend
+
+  mysql:
+    container_name: mysql
+    image: mysql:8.0.22
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=Db12345678
+      - MYSQL_USER=dangsg
+      - MYSQL_PASSWORD=Db12345678
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - backend
+
+  mongo:
+    container_name: mongo
+    image: mongo:4.4
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=dangsg
+      - MONGO_INITDB_ROOT_PASSWORD=Db@12345678
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - backend
+
+  postgres:
+    image: postgres:12
+    environment:
+        - POSTGRES_USER=airflow
+        - POSTGRES_PASSWORD=airflow
+        - POSTGRES_DB=airflow
+    ports:
+        - "5435:5434"
+
+  webserver:
+    image: apache/airflow
+    hostname: webserver
+    restart: always
+    depends_on:
+        - postgres
+    env_file:
+      - ./.airflow-env
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
+      - ./airflow-logs:/opt/airflow/logs
+    ports:
+        - "8080:8080"
+    entrypoint: ./scripts/airflow-entrypoint.sh
+    healthcheck:
+        test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-webserver.pid ]"]
+        interval: 30s
+        timeout: 30s
+        retries: 32
+
+  scheduler:
+    image: apache/airflow
+    restart: always
+    depends_on:
+      - postgres
+      - webserver
+    env_file:
+      - ./.airflow-env
+    ports:
+      - "8793:8793"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./airflow-logs:/opt/airflow/logs
+    command: scheduler
+    healthcheck:
+      test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-webserver.pid ]"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
+
+networks:
+  frontend:
+  backend:
