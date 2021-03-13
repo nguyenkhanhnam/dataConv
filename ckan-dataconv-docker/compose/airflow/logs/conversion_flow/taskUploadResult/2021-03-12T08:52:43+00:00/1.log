@@ -1,0 +1,22 @@
+[2021-03-12 08:53:13,213] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskUploadResult 2021-03-12T08:52:43+00:00 [queued]>
+[2021-03-12 08:53:13,223] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskUploadResult 2021-03-12T08:52:43+00:00 [queued]>
+[2021-03-12 08:53:13,223] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 08:53:13,223] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-12 08:53:13,223] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 08:53:13,230] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): taskUploadResult> on 2021-03-12T08:52:43+00:00
+[2021-03-12 08:53:13,232] {standard_task_runner.py:52} INFO - Started process 800 to run task
+[2021-03-12 08:53:13,234] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'conversion_flow', 'taskUploadResult', '2021-03-12T08:52:43+00:00', '--job-id', '6', '--pool', 'default_pool', '--raw', '--subdir', '/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/dag/conversion_flow.py', '--cfg-path', '/tmp/tmpqd8qkdwq', '--error-file', '/tmp/tmpt945qco9']
+[2021-03-12 08:53:13,235] {standard_task_runner.py:77} INFO - Job 6: Subtask taskUploadResult
+[2021-03-12 08:53:13,260] {logging_mixin.py:104} INFO - Running <TaskInstance: conversion_flow.taskUploadResult 2021-03-12T08:52:43+00:00 [running]> on host ba9f3097ecdf
+[2021-03-12 08:53:13,283] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=conversion_flow
+AIRFLOW_CTX_TASK_ID=taskUploadResult
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-12T08:52:43+00:00
+AIRFLOW_CTX_DAG_RUN_ID=conversion_flow1615539163.517102
+[2021-03-12 08:53:13,500] {python.py:118} INFO - Done. Returned value was: None
+[2021-03-12 08:53:13,506] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=conversion_flow, task_id=taskUploadResult, execution_date=20210312T085243, start_date=20210312T085313, end_date=20210312T085313
+[2021-03-12 08:53:13,521] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-03-12 08:53:13,526] {local_task_job.py:146} INFO - Task exited with return code 0

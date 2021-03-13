@@ -1,0 +1,23 @@
+[2021-03-12 08:06:36,667] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskPrepare 2021-03-12T08:06:35+00:00 [queued]>
+[2021-03-12 08:06:36,674] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskPrepare 2021-03-12T08:06:35+00:00 [queued]>
+[2021-03-12 08:06:36,674] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 08:06:36,674] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-12 08:06:36,674] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 08:06:36,678] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): taskPrepare> on 2021-03-12T08:06:35+00:00
+[2021-03-12 08:06:36,680] {standard_task_runner.py:52} INFO - Started process 212 to run task
+[2021-03-12 08:06:36,682] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'conversion_flow', 'taskPrepare', '2021-03-12T08:06:35+00:00', '--job-id', '32', '--pool', 'default_pool', '--raw', '--subdir', '/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/dag/conversion_flow.py', '--cfg-path', '/tmp/tmp3hs7nl49', '--error-file', '/tmp/tmpus2oq_z3']
+[2021-03-12 08:06:36,683] {standard_task_runner.py:77} INFO - Job 32: Subtask taskPrepare
+[2021-03-12 08:06:36,704] {logging_mixin.py:104} INFO - Running <TaskInstance: conversion_flow.taskPrepare 2021-03-12T08:06:35+00:00 [running]> on host 83c843b036e0
+[2021-03-12 08:06:36,727] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=conversion_flow
+AIRFLOW_CTX_TASK_ID=taskPrepare
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-12T08:06:35+00:00
+AIRFLOW_CTX_DAG_RUN_ID=conversion_flow1615536395.373682
+[2021-03-12 08:06:36,810] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:38,582] {python.py:118} INFO - Done. Returned value was: True
+[2021-03-12 08:06:38,595] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=conversion_flow, task_id=taskPrepare, execution_date=20210312T080635, start_date=20210312T080636, end_date=20210312T080638
+[2021-03-12 08:06:38,612] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-12 08:06:38,617] {local_task_job.py:146} INFO - Task exited with return code 0

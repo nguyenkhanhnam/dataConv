@@ -1,0 +1,111 @@
+[2021-03-12 08:06:43,545] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskDataConv 2021-03-12T08:06:35+00:00 [queued]>
+[2021-03-12 08:06:43,558] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskDataConv 2021-03-12T08:06:35+00:00 [queued]>
+[2021-03-12 08:06:43,559] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 08:06:43,559] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-12 08:06:43,559] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 08:06:43,564] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): taskDataConv> on 2021-03-12T08:06:35+00:00
+[2021-03-12 08:06:43,566] {standard_task_runner.py:52} INFO - Started process 309 to run task
+[2021-03-12 08:06:43,568] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'conversion_flow', 'taskDataConv', '2021-03-12T08:06:35+00:00', '--job-id', '34', '--pool', 'default_pool', '--raw', '--subdir', '/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/dag/conversion_flow.py', '--cfg-path', '/tmp/tmpb0j39olu', '--error-file', '/tmp/tmprzunnowy']
+[2021-03-12 08:06:43,569] {standard_task_runner.py:77} INFO - Job 34: Subtask taskDataConv
+[2021-03-12 08:06:43,593] {logging_mixin.py:104} INFO - Running <TaskInstance: conversion_flow.taskDataConv 2021-03-12T08:06:35+00:00 [running]> on host 83c843b036e0
+[2021-03-12 08:06:43,625] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=conversion_flow
+AIRFLOW_CTX_TASK_ID=taskDataConv
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-12T08:06:35+00:00
+AIRFLOW_CTX_DAG_RUN_ID=conversion_flow1615536395.373682
+[2021-03-12 08:06:43,752] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:43,755] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:43,782] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection actor successfully!
+[2021-03-12 08:06:43,788] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:43,794] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:43,838] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection address successfully!
+[2021-03-12 08:06:43,841] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:43,843] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:43,855] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection category successfully!
+[2021-03-12 08:06:43,858] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:43,861] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:43,893] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection city successfully!
+[2021-03-12 08:06:43,897] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:43,899] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:43,913] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection country successfully!
+[2021-03-12 08:06:43,916] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:43,919] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:43,966] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection customer successfully!
+[2021-03-12 08:06:43,969] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:43,975] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:44,073] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection film successfully!
+[2021-03-12 08:06:44,083] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:44,096] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:44,272] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection film_actor successfully!
+[2021-03-12 08:06:44,276] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:44,278] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:44,316] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection film_category successfully!
+[2021-03-12 08:06:44,319] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:44,321] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:44,357] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection film_text successfully!
+[2021-03-12 08:06:44,362] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:44,370] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:44,506] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection inventory successfully!
+[2021-03-12 08:06:44,510] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:44,511] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:44,524] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection language successfully!
+[2021-03-12 08:06:44,528] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:44,605] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:45,384] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection payment successfully!
+[2021-03-12 08:06:45,397] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:45,447] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:46,122] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection rental successfully!
+[2021-03-12 08:06:46,130] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:46,131] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:46,142] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection staff successfully!
+[2021-03-12 08:06:46,146] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:46,147] {logging_mixin.py:104} INFO - MySQL connection is closed!
+[2021-03-12 08:06:46,157] {logging_mixin.py:104} INFO - Write JSON data to MongoDB collection store successfully!
+[2021-03-12 08:06:46,158] {logging_mixin.py:104} INFO - Time for migrating MySQL to MongoDB: 2412.3
+[2021-03-12 08:06:46,160] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:46,247] {logging_mixin.py:104} INFO - Disconnected to MySQL Server version  8.0.22
+[2021-03-12 08:06:46,250] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:46,250] {logging_mixin.py:104} INFO - Create validated table successfully!
+[2021-03-12 08:06:46,447] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:46,555] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:46,575] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:46,661] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:46,689] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:46,824] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:47,062] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:47,691] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:47,814] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:47,927] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:48,507] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:48,524] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:50,747] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:52,930] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:52,956] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:52,972] {logging_mixin.py:104} INFO - Insert done!
+[2021-03-12 08:06:53,921] {logging_mixin.py:104} INFO - Disconnected to MySQL Server version  8.0.22
+[2021-03-12 08:06:53,924] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:53,927] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 08:06:53,937] {logging_mixin.py:104} INFO - 200 200 200
+[2021-03-12 08:06:53,939] {logging_mixin.py:104} INFO - 603 603 603
+[2021-03-12 08:06:53,940] {logging_mixin.py:104} INFO - 16 16 16
+[2021-03-12 08:06:53,941] {logging_mixin.py:104} INFO - 600 600 600
+[2021-03-12 08:06:53,943] {logging_mixin.py:104} INFO - 109 109 109
+[2021-03-12 08:06:53,945] {logging_mixin.py:104} INFO - 599 599 599
+[2021-03-12 08:06:53,947] {logging_mixin.py:104} INFO - 1000 1000 1000
+[2021-03-12 08:06:53,948] {logging_mixin.py:104} INFO - 5462 5462 5462
+[2021-03-12 08:06:53,950] {logging_mixin.py:104} INFO - 1000 1000 1000
+[2021-03-12 08:06:53,951] {logging_mixin.py:104} INFO - 1000 1000 1000
+[2021-03-12 08:06:53,952] {logging_mixin.py:104} INFO - 4581 4581 4581
+[2021-03-12 08:06:53,953] {logging_mixin.py:104} INFO - 6 6 6
+[2021-03-12 08:06:53,956] {logging_mixin.py:104} INFO - 16049 16049 16049
+[2021-03-12 08:06:53,958] {logging_mixin.py:104} INFO - 16044 16044 16044
+[2021-03-12 08:06:53,960] {logging_mixin.py:104} INFO - 2 2 2
+[2021-03-12 08:06:53,961] {logging_mixin.py:104} INFO - 2 2 2
+[2021-03-12 08:07:07,120] {logging_mixin.py:104} INFO - Convert relations successfully!
+[2021-03-12 08:07:07,530] {python.py:118} INFO - Done. Returned value was: None
+[2021-03-12 08:07:07,537] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=conversion_flow, task_id=taskDataConv, execution_date=20210312T080635, start_date=20210312T080643, end_date=20210312T080707
+[2021-03-12 08:07:07,554] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-12 08:07:07,560] {local_task_job.py:146} INFO - Task exited with return code 0

@@ -1,0 +1,70 @@
+[2021-03-12 07:45:20,039] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskSchemaConv 2021-03-12T07:45:15+00:00 [queued]>
+[2021-03-12 07:45:20,048] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskSchemaConv 2021-03-12T07:45:15+00:00 [queued]>
+[2021-03-12 07:45:20,049] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 07:45:20,049] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-12 07:45:20,049] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 07:45:20,055] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): taskSchemaConv> on 2021-03-12T07:45:15+00:00
+[2021-03-12 07:45:20,056] {standard_task_runner.py:52} INFO - Started process 5913 to run task
+[2021-03-12 07:45:20,059] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'conversion_flow', 'taskSchemaConv', '2021-03-12T07:45:15+00:00', '--job-id', '20', '--pool', 'default_pool', '--raw', '--subdir', '/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/dag/conversion_flow.py', '--cfg-path', '/tmp/tmplrhubofs', '--error-file', '/tmp/tmp__n1yoj9']
+[2021-03-12 07:45:20,059] {standard_task_runner.py:77} INFO - Job 20: Subtask taskSchemaConv
+[2021-03-12 07:45:20,092] {logging_mixin.py:104} INFO - Running <TaskInstance: conversion_flow.taskSchemaConv 2021-03-12T07:45:15+00:00 [running]> on host 83c843b036e0
+[2021-03-12 07:45:20,117] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=conversion_flow
+AIRFLOW_CTX_TASK_ID=taskSchemaConv
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-12T07:45:15+00:00
+AIRFLOW_CTX_DAG_RUN_ID=conversion_flow1615535115.039264
+[2021-03-12 07:45:22,897] {logging_mixin.py:104} INFO - Generate MySQL database sakila successfully!
+[2021-03-12 07:45:22,916] {logging_mixin.py:104} INFO - Error while writing JSON file schema.json to MongoDB collection schema of database sakila
+[2021-03-12 07:45:22,916] {logging_mixin.py:104} INFO - command insert requires authentication, full error: {'ok': 0.0, 'errmsg': 'command insert requires authentication', 'code': 13, 'codeName': 'Unauthorized'}
+[2021-03-12 07:45:22,916] {conversion_flow.py:113} ERROR - Error Occure in taskDataConv Task!
+[2021-03-12 07:45:22,916] {conversion_flow.py:114} ERROR - command insert requires authentication, full error: {'ok': 0.0, 'errmsg': 'command insert requires authentication', 'code': 13, 'codeName': 'Unauthorized'}
+[2021-03-12 07:45:22,916] {taskinstance.py:1455} ERROR - command insert requires authentication, full error: {'ok': 0.0, 'errmsg': 'command insert requires authentication', 'code': 13, 'codeName': 'Unauthorized'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/usr/local/lib/python3.6/dist-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/usr/local/lib/python3.6/dist-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/usr/local/lib/python3.6/dist-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.6/dist-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/dag/conversion_flow.py", line 115, in taskSchemaConv
+    raise exception
+  File "/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/dag/conversion_flow.py", line 103, in taskSchemaConv
+    schema_conversion.run()
+  File "/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/schema_conversion.py", line 37, in run
+    self.__save()
+  File "/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/schema_conversion.py", line 55, in __save
+    import_json_to_mongodb(db_connection, collection_name="schema", dbname=self.schema_conv_output_option.dbname, json_filename=self.schema_filename)
+  File "/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/utilities.py", line 55, in import_json_to_mongodb
+    raise e
+  File "/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/utilities.py", line 49, in import_json_to_mongodb
+    Collection.insert_one(table_data)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 701, in insert_one
+    session=session),
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 615, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 603, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1498, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1384, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1416, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 598, in _insert_command
+    retryable_write=retryable_write)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/pool.py", line 694, in command
+    exhaust_allowed=exhaust_allowed)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/network.py", line 161, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/helpers.py", line 160, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: command insert requires authentication, full error: {'ok': 0.0, 'errmsg': 'command insert requires authentication', 'code': 13, 'codeName': 'Unauthorized'}
+[2021-03-12 07:45:22,920] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=conversion_flow, task_id=taskSchemaConv, execution_date=20210312T074515, start_date=20210312T074520, end_date=20210312T074522
+[2021-03-12 07:45:22,957] {local_task_job.py:146} INFO - Task exited with return code 1

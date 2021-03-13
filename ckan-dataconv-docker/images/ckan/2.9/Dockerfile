@@ -5,7 +5,7 @@ FROM ubuntu:18.04 as ckanbuild
 
 # Set CKAN version to build
 ENV GIT_URL=https://github.com/ckan/ckan.git
-ENV GIT_BRANCH=ckan-2.9.1
+ENV GIT_BRANCH=ckan-2.9.2
 
 # Set src dirs
 ENV SRC_DIR=/srv/app/src
@@ -21,7 +21,7 @@ RUN apt-get -y install \
         curl \
         python3 \
         libpq-dev \
-        linux-headers-$(uname -r) \
+        linux-headers-4.15.0-99-generic\
         gcc \
         make \
         g++ \
@@ -111,7 +111,7 @@ ENV SRC_DIR=/srv/app/src
 ENV DATA_DIR=/srv/app/data
 ENV PIP_SRC=${SRC_DIR}
 ENV CKAN_SITE_URL=http://localhost:5000
-ENV CKAN__PLUGINS envvars image_view text_view recline_view datastore datapusher mysql2mongodb
+ENV CKAN__PLUGINS envvars image_view text_view recline_view ckanext-mysql2mongodb
 
 WORKDIR ${APP_DIR}
 
@@ -218,6 +218,26 @@ RUN apt-get -y install mysql-client
 # RUN apt-get -y install mongodb-tools
 RUN apt-get -y install openjdk-11-jdk
 RUN apt-get -y install zip
+
+RUN apt-get install -y --no-install-recommends \
+        freetds-bin \
+        ldap-utils \
+        libffi6 \
+        libsasl2-2 \
+        libsasl2-modules \
+        libssl1.1 \
+        locales  \
+        lsb-release \
+        sasl2-bin \
+        sqlite3 \
+        vim \
+        mongo-tools\
+        unixodbc
+
+RUN mkdir -p /srv/app/airflow
+RUN chmod 777 -R /srv/app/airflow
+ENV AIRFLOW_HOME=/srv/app/airflow
+RUN pip install apache-airflow
 
 EXPOSE 5000
 

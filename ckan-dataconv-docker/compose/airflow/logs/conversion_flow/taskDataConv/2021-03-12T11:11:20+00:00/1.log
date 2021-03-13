@@ -1,0 +1,31 @@
+[2021-03-12 11:11:25,940] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskDataConv 2021-03-12T11:11:20+00:00 [queued]>
+[2021-03-12 11:11:25,950] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: conversion_flow.taskDataConv 2021-03-12T11:11:20+00:00 [queued]>
+[2021-03-12 11:11:25,950] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 11:11:25,950] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-12 11:11:25,950] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-12 11:11:25,955] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): taskDataConv> on 2021-03-12T11:11:20+00:00
+[2021-03-12 11:11:25,957] {standard_task_runner.py:52} INFO - Started process 1375 to run task
+[2021-03-12 11:11:25,960] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'conversion_flow', 'taskDataConv', '2021-03-12T11:11:20+00:00', '--job-id', '10', '--pool', 'default_pool', '--raw', '--subdir', '/srv/app/src/ckanext-mysql2mongodb/ckanext/mysql2mongodb/data_conv/dag/conversion_flow.py', '--cfg-path', '/tmp/tmpfm93wxtc', '--error-file', '/tmp/tmpjclc6k1c']
+[2021-03-12 11:11:25,960] {standard_task_runner.py:77} INFO - Job 10: Subtask taskDataConv
+[2021-03-12 11:11:25,983] {logging_mixin.py:104} INFO - Running <TaskInstance: conversion_flow.taskDataConv 2021-03-12T11:11:20+00:00 [running]> on host 6299f34f884f
+[2021-03-12 11:11:26,005] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=conversion_flow
+AIRFLOW_CTX_TASK_ID=taskDataConv
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-12T11:11:20+00:00
+AIRFLOW_CTX_DAG_RUN_ID=conversion_flow1615547480.130667
+[2021-03-12 11:11:26,075] {logging_mixin.py:104} INFO - Time for migrating MySQL to MongoDB: 0.0
+[2021-03-12 11:11:26,080] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 11:11:26,089] {logging_mixin.py:104} INFO - Disconnected to MySQL Server version  8.0.22
+[2021-03-12 11:11:26,092] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 11:11:26,092] {logging_mixin.py:104} INFO - Create validated table successfully!
+[2021-03-12 11:11:26,092] {logging_mixin.py:104} INFO - Disconnected to MySQL Server version  8.0.22
+[2021-03-12 11:11:26,095] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 11:11:26,098] {logging_mixin.py:104} INFO - Connected to MySQL Server version  8.0.22
+[2021-03-12 11:11:26,102] {logging_mixin.py:104} INFO - Convert relations successfully!
+[2021-03-12 11:11:26,153] {python.py:118} INFO - Done. Returned value was: None
+[2021-03-12 11:11:26,162] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=conversion_flow, task_id=taskDataConv, execution_date=20210312T111120, start_date=20210312T111125, end_date=20210312T111126
+[2021-03-12 11:11:26,180] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-12 11:11:26,211] {local_task_job.py:146} INFO - Task exited with return code 0

@@ -1,0 +1,6 @@
+pymongo==3.11.1
+mysql-connector-python==8.0.22
+apache-airflow
+python-pcre
+psycopg2
+jsonpickle
