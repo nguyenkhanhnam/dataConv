@@ -1,36 +1,10 @@
-# docker-compose build && docker-compose up -d
-# version: "3"
-# x-airflow-common:
-  # &airflow-common
-  # image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.0.1}
-  # environment:
-    # &airflow-common-env
-    # AIRFLOW__CORE__EXECUTOR: CeleryExecutor
-    # AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-    # AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
-    # AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
-    # AIRFLOW__CORE__FERNET_KEY: ''
-    # AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
-    # AIRFLOW__CORE__LOAD_EXAMPLES: 'true'
-  # user: root
-  # volumes:
-    # - ./dags:/opt/airflow/dags
-    # - ./logs:/opt/airflow/logs
-    # - ./plugins:/opt/airflow/plugins
-  # user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
-  # depends_on:
-    # redis:
-      # condition: service_healthy
-    # postgres:
-      # condition: service_healthy
-
 
 volumes:
   ckan_data:
   pg_data:
   solr_data:
   mysql_data:
-  mongo_data:
+  datastore_data:
   postgres-db-volume:
 
 
@@ -48,7 +22,7 @@ services:
     depends_on:
       - db
       - mysql
-      - mongo
+      - datastore
       - postgres_airflow
     ports:
       - "0.0.0.0:${CKAN_PORT}:5000"
@@ -71,6 +45,7 @@ services:
       - ./dags/:/srv/app/airflow/dags/
       - ./dagbags/:/srv/app/dagbags/
       - ./production.ini:/srv/app/production.ini
+      - ./ckanext-mysql2mongodb:/srv/app/src/ckanext-mysql2mongodb
     links:
       - "mysql:mysql"
     entrypoint:
@@ -142,14 +117,14 @@ services:
     networks:
       - backend
 
-  mongo:
-    container_name: mongo
+  datastore:
+    container_name: datastore
     image: mongo:4.4
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=password
     volumes:
-      - mongo_data:/data/db
+      - datastore_data:/data/db
     networks:
       - backend
 
