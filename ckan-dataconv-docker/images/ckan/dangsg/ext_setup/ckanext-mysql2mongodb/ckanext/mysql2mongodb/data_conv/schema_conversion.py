@@ -464,8 +464,10 @@ class SchemaConversion:
 		converted_schema = {}
 		catalog_schema = self.db_schema["catalog"]
 
-		converted_schema["database-name"] = catalog_schema["database-info"]["product-name"]
-		converted_schema["database-version"] = catalog_schema["database-info"]["product-version"]
+		converted_schema["misc"] = {
+			"database-name": catalog_schema["database-info"]["product-name"],
+			"database-version": catalog_schema["database-info"]["product-version"],
+		}
 		converted_schema["schema"] = catalog_schema["name"]
 		converted_schema["tables"] = []
 		converted_schema["foreign-keys"] = []
