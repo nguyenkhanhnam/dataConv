@@ -1,0 +1,3 @@
+# Airflow temporary artifacts
+ckan-dataconv-docker/compose/airflow/logs/
+# ckan-dataconv-docker/compose/airflow/airflow-webserver.pid
