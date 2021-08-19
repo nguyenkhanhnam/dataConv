@@ -464,30 +464,37 @@ class SchemaConversion:
 		converted_schema = {}
 		catalog_schema = self.db_schema["catalog"]
 
-		converted_schema["database-name"] = catalog_schema["database-info"]["product-name"]
-		converted_schema["database-version"] = catalog_schema["database-info"]["product-version"]
-		converted_schema["schema"] = catalog_schema["name"]
+		converted_schema["misc"] = {
+			"database-name": catalog_schema["database-info"]["product-name"],
+			"database-version": catalog_schema["database-info"]["product-version"],
+			"triggers": [],
+		}
 		converted_schema["tables"] = []
 		converted_schema["foreign-keys"] = []
+		converted_schema["constraints"] = []
+		converted_schema["other"] = {}
 
 		tables_schema = catalog_schema["tables"]
 		for table_schema in tables_schema:
 			table_info = {}
 			table_info["name"] = table_schema["name"]
-			table_info["engine"] = table_schema["attributes"]["ENGINE"]
-			table_info["table-collation"] = table_schema["attributes"]["TABLE_COLLATION"]
+			table_info["misc"] = {
+				"engine": table_schema["attributes"]["ENGINE"],
+				"table-collation": table_schema["attributes"]["TABLE_COLLATION"],
+			}
 
-			table_info["constraints"] = []
+			# Constraints
 			for table_schema_constraint in table_schema["table-constraints"]:
 				if type(table_schema_constraint) is dict:
 					table_constraint = {
 						"name": table_schema_constraint["name"],
 						"type": table_schema_constraint["constraint-type"],
-						"definition": table_schema_constraint["definition"]
+						"definition": table_schema_constraint["definition"],
+						"table": table_info["name"],
 					}
-					table_info["constraints"].append(table_constraint)
+					converted_schema["constraints"].append(table_constraint)
 
-			table_info["triggers"] = []
+			# Triggers
 			for table_schema_trigger in table_schema["triggers"]:
 				if type(table_schema_trigger) is dict:
 					table_trigger = {
@@ -498,8 +505,9 @@ class SchemaConversion:
 						"action-statement" : table_schema_trigger["action-statement"],
 						"condition-timing" : table_schema_trigger["condition-timing"],
 						"event-manipulation-type" : table_schema_trigger["event-manipulation-type"],
+						"table": table_info["name"],
 					}
-					table_info["triggers"].append(table_trigger)
+					converted_schema["misc"]["triggers"].append(table_trigger)
 
 			columns_schema = self.db_schema["all-table-columns"]
 			table_info["columns"] = []
@@ -507,13 +515,15 @@ class SchemaConversion:
 				if column_schema["@uuid"] in table_schema["columns"]:
 					column_info = {
 						"name": column_schema["name"],
-						"character-set-name": column_schema["attributes"]["CHARACTER_SET_NAME"],
-						"collation-name": column_schema["attributes"]["COLLATION_NAME"],
 						"column-type": column_schema["attributes"]["COLUMN_TYPE"],
-						"nullable": column_schema["attributes"]["IS_NULLABLE"],
-						"auto-incremented": column_schema["auto-incremented"],
-						"nullable": column_schema["nullable"],
-						"default-value" : column_schema["default-value"],
+						"misc": {
+							"character-set-name": column_schema["attributes"]["CHARACTER_SET_NAME"],
+							"collation-name": column_schema["attributes"]["COLLATION_NAME"],
+							"nullable": column_schema["attributes"]["IS_NULLABLE"],
+							"auto-incremented": column_schema["auto-incremented"],
+							"nullable": column_schema["nullable"],
+							"default-value" : column_schema["default-value"],
+						},
 					}
 					table_info["columns"].append(column_info)
 
