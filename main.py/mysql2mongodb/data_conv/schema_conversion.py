@@ -515,7 +515,7 @@ class SchemaConversion:
 				if column_schema["@uuid"] in table_schema["columns"]:
 					column_info = {
 						"name": column_schema["name"],
-						"column-type": column_schema["attributes"]["COLUMN_TYPE"],
+						"column-type": self.unify_data_type(column_schema["attributes"]["COLUMN_TYPE"]),
 						"misc": {
 							"character-set-name": column_schema["attributes"]["CHARACTER_SET_NAME"],
 							"collation-name": column_schema["attributes"]["COLLATION_NAME"],
@@ -539,26 +539,25 @@ class SchemaConversion:
 					table_info["indexes"].append(index_info)
 
 			converted_schema["tables"].append(table_info)
-
+					
+			# Foreign keys
 			table_dict = self.get_tables_dict()
 			cols_dict = self.get_columns_dict()
 			for foreign_key_schema in table_schema["foreign-keys"]:
 				if type(foreign_key_schema) is dict:
-					col_refs = list(map(lambda fk_sche: {
-							"key-sequence": fk_sche["key-sequence"],
-							"foreign-key-column": cols_dict[fk_sche["foreign-key-column"]], 
-							"foreign-key-table": table_dict[fk_sche["foreign-key-column"]],
-							"primary-key-column": cols_dict[fk_sche["primary-key-column"]], 
-							"primary-key-table": table_dict[fk_sche["primary-key-column"]],
-						}, 
-						foreign_key_schema["column-references"]))
-					foreign_key_info = {
-						"name": foreign_key_schema["name"],
-						"column-references": col_refs,
-						"delete-rule": foreign_key_schema["delete-rule"],
-						"update-rule": foreign_key_schema["update-rule"],
-					}
-					converted_schema["foreign-keys"].append(foreign_key_info)
+					for fk_sche in foreign_key_schema["column-references"]:
+						for table_idx, table in enumerate(converted_schema["tables"]):
+							if table["name"] == table_dict[fk_sche['foreign-key-column']]:
+								for column_idx, column in enumerate(table["columns"]):
+									if column["name"] == cols_dict[fk_sche['foreign-key-column']]:
+										converted_schema["tables"][table_idx]["columns"][column_idx].update({
+											"refer-key-column": cols_dict[fk_sche['primary-key-column']],
+											"refer-key-table": table_dict[fk_sche['primary-key-column']],
+										})
+										converted_schema["tables"][table_idx]["columns"][column_idx]["misc"].update({
+											"delete-rule": foreign_key_schema["delete-rule"],
+											"update-rule": foreign_key_schema["update-rule"],
+										})
 		
 		mongodb_connection = open_connection_mongodb(
 			self.schema_conv_output_option.host,
@@ -570,3 +569,32 @@ class SchemaConversion:
 		store_json_to_mongodb(mongodb_connection, "schema_view", converted_schema)
 		print(f"Save schema view from {self.schema_conv_output_option.dbname} database to MongoDB successfully!")
 		return True
+
+	def unify_data_type(self, sql_type):
+		"""
+		Unifying SQL data type.
+		Input: SQL data type.
+		Output: Unified data type.
+		"""
+		dtype_dict = {}
+		dtype_dict["int"] = ["BIT", "TINYINT", "SMALLINT", "MEDIUMINT", "INT", "INTEGER", "YEAR", "BOOL", "BOOLEAN"] 
+		# dtype_dict["long"] = ["BIGINT"]
+		dtype_dict["decimal"] = ["DECIMAL", "DEC", "FIXED"]
+		dtype_dict["float"] = ["FLOAT", "DOUBLE", "REAL"]
+		# dtype_dict["bool"] = []
+		dtype_dict["date"] = ["DATE", "DATETIME", "TIMESTAMP", "TIME"]
+		# dtype_dict["timestamp"] = []
+		# dtype_dict["binData"] = ["BINARY", "VARBINARY", "TINYBLOB", "BLOB", "MEDIUMBLOB", "LONGBLOB"]
+		# dtype_dict["blob"] = []
+		dtype_dict["text"] = ["JSON", "CHARACTER", "CHARSET", "ASCII", "UNICODE", "CHAR", "VARCHAR", "TINYTEXT", "TEXT", "MEDIUMTEXT", "LONGTEXT", "GEOMETRY", "POINT", "LINESTRING", "POLYGON", "MULTIPOINT", "MULTILINESTRING", "MULTIPOLYGON", "GEOMETRYCOLLECTION"]
+		dtype_dict["object"] = ["ENUM"]
+		dtype_dict["array"] = ["SET"]
+		# dtype_dict["single-geometry"] = []
+		# dtype_dict["multiple-geometry"] = []
+
+		formatted_sql_type = sql_type.split()[0].split('(')[0].upper()
+		for unified_type in dtype_dict.keys():
+			if formatted_sql_type in dtype_dict[unified_type]:
+				return unified_type
+		print(f"SQL data type {sql_type} has not been handled!")
+		return None
